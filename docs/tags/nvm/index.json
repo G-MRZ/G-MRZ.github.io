@@ -1,0 +1,10 @@
+[
+    {
+        "ref": "https://g-mrz.github.io/blog/nvm/",
+        "title": "Nvm",
+        "section": "blog",
+        "tags": ["nvm"],
+        "date" : "2021.08.15",
+        "body": "安装 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash\rcurl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash\r常用命令 nvm install [version number] 安装固定版本node\nnvm uninstall [version number] 卸载固定版本node\nnvm ls 列出已安装node\nnvm use [version number] 切换版本\nnvm ls-remote (linux)查看远程服务器所以可用版本 nvm ls available (windows)查看远程服务器所以可用版本\n"
+    }
+]
