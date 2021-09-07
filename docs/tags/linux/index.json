@@ -1,14 +1,5 @@
 [
     {
-        "ref": "https://g-mrz.github.io/blog/linux/",
-        "title": "Linux",
-        "section": "blog",
-        "tags": ["linux"],
-        "date" : "2021.08.15",
-        "body": "命令 sudo apt-get update 更新访问源列表\nsudo apt-get upgrade 更新已安装软件\n"
-    }
-,
-    {
         "ref": "https://g-mrz.github.io/blog/ranger%E7%BB%88%E7%AB%AF%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/",
         "title": "Ranger终端文件管理器",
         "section": "blog",

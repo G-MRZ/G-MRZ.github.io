@@ -17,11 +17,11 @@
     
     <item>
       <title>Linux</title>
-      <link>https://g-mrz.github.io/blog/linux/</link>
+      <link>https://g-mrz.github.io/blog/ubuntu/</link>
       <pubDate>Sun, 15 Aug 2021 16:32:44 +0800</pubDate>
       
-      <guid>https://g-mrz.github.io/blog/linux/</guid>
-      <description>命令 sudo apt-get update 更新访问源列表 sudo apt-get upgrade 更新已安装软件</description>
+      <guid>https://g-mrz.github.io/blog/ubuntu/</guid>
+      <description>命令 sudo apt install [name] 安装应用 sudo apt remove [name] 卸载应用 sudo apt-get update 更新访问源列表 sudo apt-get upgrade 更新已安装软件 sudo update-alternatives --config editor 配置默认文本编辑器</description>
     </item>
     
     <item>
@@ -43,15 +43,6 @@
     </item>
     
     <item>
-      <title>图片回显</title>
-      <link>https://g-mrz.github.io/blog/%E5%9B%BE%E7%89%87%E5%9B%9E%E6%98%BE/</link>
-      <pubDate>Wed, 11 Aug 2021 20:35:54 +0800</pubDate>
-      
-      <guid>https://g-mrz.github.io/blog/%E5%9B%BE%E7%89%87%E5%9B%9E%E6%98%BE/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Neovim</title>
       <link>https://g-mrz.github.io/blog/neovim/</link>
       <pubDate>Sun, 08 Aug 2021 15:02:23 +0800</pubDate>
@@ -67,15 +58,6 @@
       
       <guid>https://g-mrz.github.io/blog/vim/</guid>
       <description>插件 1、vim-plug 插件管理器 https://github.com/junegunn/vim-plug 2、coc-nvim 代码补全 https://github.com/neoclide/coc.nvim 3、nerdtree 目录树 https://github.com/preservim/nerdtree vim-plug windows安装方法 iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |` ni $HOME/vimfiles/autoload/plug.vim -Force Unix</description>
-    </item>
-    
-    <item>
-      <title>Elementui折叠面板嵌套vxe-Table表格宽度只占折叠面板部分宽度</title>
-      <link>https://g-mrz.github.io/blog/elementui%E6%8A%98%E5%8F%A0%E9%9D%A2%E6%9D%BF%E5%B5%8C%E5%A5%97vxe-table%E8%A1%A8%E6%A0%BC%E5%AE%BD%E5%BA%A6%E5%8F%AA%E5%8D%A0%E6%8A%98%E5%8F%A0%E9%9D%A2%E6%9D%BF%E9%83%A8%E5%88%86%E5%AE%BD%E5%BA%A6/</link>
-      <pubDate>Tue, 06 Jul 2021 22:34:51 +0800</pubDate>
-      
-      <guid>https://g-mrz.github.io/blog/elementui%E6%8A%98%E5%8F%A0%E9%9D%A2%E6%9D%BF%E5%B5%8C%E5%A5%97vxe-table%E8%A1%A8%E6%A0%BC%E5%AE%BD%E5%BA%A6%E5%8F%AA%E5%8D%A0%E6%8A%98%E5%8F%A0%E9%9D%A2%E6%9D%BF%E9%83%A8%E5%88%86%E5%AE%BD%E5%BA%A6/</guid>
-      <description>git push test6</description>
     </item>
     
   </channel>
