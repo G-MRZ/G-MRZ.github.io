@@ -1,0 +1,19 @@
+[
+    {
+        "ref": "https://g-mrz.github.io/blog/ubuntu/",
+        "title": "Linux",
+        "section": "blog",
+        "tags": ["ubuntu"],
+        "date" : "2021.08.15",
+        "body": "命令 sudo apt install [name] 安装应用\nsudo apt remove [name] 卸载应用\nsudo apt-get update 更新访问源列表\nsudo apt-get upgrade 更新已安装软件\nsudo update-alternatives --config editor 配置默认文本编辑器\n"
+    }
+,
+    {
+        "ref": "https://g-mrz.github.io/blog/ranger%E7%BB%88%E7%AB%AF%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/",
+        "title": "Ranger终端文件管理器",
+        "section": "blog",
+        "tags": ["linux","ubuntu"],
+        "date" : "2021.08.15",
+        "body": "安装 sudo apt install ranger, 如遇到Unable to locate package错误，则先执行sudo apt-get update。\n配置 执行ranger --copy-config=all 生成默认配置文件于~/.config/ranger\n命令 "
+    }
+]

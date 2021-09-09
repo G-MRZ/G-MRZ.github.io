@@ -7,6 +7,9 @@ hasCJKLanguage = true
 # pygmentsUseClasses = true
 # googleAnalytics = "{your tracking code}"
 
+# 配置hugo打包文件夹
+publishdir = "docs"
+
 [markup.goldmark.renderer]
     unsafe = true # Allow user HTML tags
 
