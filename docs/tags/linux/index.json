@@ -1,5 +1,14 @@
 [
     {
+        "ref": "https://g-mrz.github.io/blog/hugo/",
+        "title": "Hugo",
+        "section": "blog",
+        "tags": ["linux","hugo"],
+        "date" : "2021.10.17",
+        "body": "hugo安装 下载nvim-win64.zip, 解压到本地目录（自己选), 在解压后文件中找到bin目录， 复制其绝对路径添加到Windows用户环境变量\n"
+    }
+,
+    {
         "ref": "https://g-mrz.github.io/blog/ranger%E7%BB%88%E7%AB%AF%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/",
         "title": "Ranger终端文件管理器",
         "section": "blog",

@@ -5,7 +5,16 @@
     <link>https://g-mrz.github.io/</link>
     <description>Recent content on MRZ</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 15 Aug 2021 22:56:32 +0800</lastBuildDate><atom:link href="https://g-mrz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Oct 2021 15:53:42 +0800</lastBuildDate><atom:link href="https://g-mrz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://g-mrz.github.io/blog/hugo/</link>
+      <pubDate>Sun, 17 Oct 2021 15:53:42 +0800</pubDate>
+      
+      <guid>https://g-mrz.github.io/blog/hugo/</guid>
+      <description>hugo安装 下载nvim-win64.zip, 解压到本地目录（自己选), 在解压后文件中找到bin目录， 复制其绝对路径添加到Windows用户</description>
+    </item>
+    
     <item>
       <title>Nvm</title>
       <link>https://g-mrz.github.io/blog/nvm/</link>

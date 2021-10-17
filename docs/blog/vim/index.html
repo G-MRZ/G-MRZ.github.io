@@ -95,13 +95,13 @@
 <p>3、nerdtree 目录树 <a href="https://github.com/preservim/nerdtree">https://github.com/preservim/nerdtree</a></p>
 <h2 id="vim-plug">vim-plug</h2>
 <h6 id="windows安装方法">windows安装方法</h6>
-<pre><code>iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+<pre tabindex="0"><code>iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
     ni $HOME/vimfiles/autoload/plug.vim -Force
 </code></pre><h6 id="unix安装方法">Unix安装方法</h6>
-<pre><code>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+<pre tabindex="0"><code>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 </code></pre><h6 id="vim配置文件添加">vim配置文件添加</h6>
-<pre><code>call plug#begin('~/.vim/plugged')
+<pre tabindex="0"><code>call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 call plug#end()
 
@@ -127,7 +127,7 @@ call plug#end()
 <p>autocmd! User goyo.vim echom &lsquo;Goyo is now loaded!&rsquo;</p>
 <h2 id="coc-nvim">coc-nvim</h2>
 <h6 id="安装">安装</h6>
-<pre><code>call plug#begin('~/.vim/plugged')
+<pre tabindex="0"><code>call plug#begin('~/.vim/plugged')
     ***
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()

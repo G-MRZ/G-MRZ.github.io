@@ -5,7 +5,25 @@
     <link>https://g-mrz.github.io/tags/</link>
     <description>Recent content in Tags on MRZ</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 15 Aug 2021 22:56:32 +0800</lastBuildDate><atom:link href="https://g-mrz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Oct 2021 15:53:42 +0800</lastBuildDate><atom:link href="https://g-mrz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo</title>
+      <link>https://g-mrz.github.io/tags/hugo/index.json</link>
+      <pubDate>Sun, 17 Oct 2021 15:53:42 +0800</pubDate>
+      
+      <guid>https://g-mrz.github.io/tags/hugo/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://g-mrz.github.io/tags/linux/index.json</link>
+      <pubDate>Sun, 17 Oct 2021 15:53:42 +0800</pubDate>
+      
+      <guid>https://g-mrz.github.io/tags/linux/index.json</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>nvm</title>
       <link>https://g-mrz.github.io/tags/nvm/index.json</link>
@@ -21,15 +39,6 @@
       <pubDate>Sun, 15 Aug 2021 16:32:44 +0800</pubDate>
       
       <guid>https://g-mrz.github.io/tags/ubuntu/index.json</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://g-mrz.github.io/tags/linux/index.json</link>
-      <pubDate>Sun, 15 Aug 2021 16:15:52 +0800</pubDate>
-      
-      <guid>https://g-mrz.github.io/tags/linux/index.json</guid>
       <description></description>
     </item>
     
