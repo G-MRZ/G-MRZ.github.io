@@ -3,7 +3,7 @@
   <head>
   <title>
       
-          Hugo - MRZ
+          Git Ssh - MRZ
       
   </title>
   <meta charset="utf-8">
@@ -27,21 +27,21 @@
   
   
 
-  <meta property="og:title" content="Hugo" />
-<meta property="og:description" content="ubuntu hugo安装 https://github.com/gohugoio/hugo/releases下载hugo*.dep安装包 在安装包存放目录" />
+  <meta property="og:title" content="Git Ssh" />
+<meta property="og:description" content="git 使用ssh密钥 生成ssh密钥 ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot; ssh-agent管理密钥 # 手动启动ssh-agent $ eval &quot;$(ssh-agent -s)&quot; &gt; Agent pid 59566 # 将ssh私钥添加到ssh-a" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://g-mrz.github.io/blog/hugo/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2021-10-17T15:53:42+08:00" />
-<meta property="article:modified_time" content="2021-10-17T15:53:42+08:00" />
+<meta property="og:url" content="https://g-mrz.github.io/blog/git-ssh/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2021-10-17T16:27:54+08:00" />
+<meta property="article:modified_time" content="2021-10-17T16:27:54+08:00" />
 
-<meta itemprop="name" content="Hugo">
-<meta itemprop="description" content="ubuntu hugo安装 https://github.com/gohugoio/hugo/releases下载hugo*.dep安装包 在安装包存放目录"><meta itemprop="datePublished" content="2021-10-17T15:53:42+08:00" />
-<meta itemprop="dateModified" content="2021-10-17T15:53:42+08:00" />
-<meta itemprop="wordCount" content="122">
-<meta itemprop="keywords" content="linux,hugo," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="name" content="Git Ssh">
+<meta itemprop="description" content="git 使用ssh密钥 生成ssh密钥 ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot; ssh-agent管理密钥 # 手动启动ssh-agent $ eval &quot;$(ssh-agent -s)&quot; &gt; Agent pid 59566 # 将ssh私钥添加到ssh-a"><meta itemprop="datePublished" content="2021-10-17T16:27:54+08:00" />
+<meta itemprop="dateModified" content="2021-10-17T16:27:54+08:00" />
+<meta itemprop="wordCount" content="89">
+<meta itemprop="keywords" content="git,ssh," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:image" content="https://g-mrz.github.io//img/avatar.jifi"/>
-<meta name="twitter:title" content="Hugo"/>
-<meta name="twitter:description" content="ubuntu hugo安装 https://github.com/gohugoio/hugo/releases下载hugo*.dep安装包 在安装包存放目录"/>
+<meta name="twitter:title" content="Git Ssh"/>
+<meta name="twitter:description" content="git 使用ssh密钥 生成ssh密钥 ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot; ssh-agent管理密钥 # 手动启动ssh-agent $ eval &quot;$(ssh-agent -s)&quot; &gt; Agent pid 59566 # 将ssh私钥添加到ssh-a"/>
 
   <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -58,7 +58,7 @@
 
   <body>
     
-  <h1>Hugo</h1>
+  <h1>Git Ssh</h1>
   <header>
   
   <div class="avatar">
@@ -81,12 +81,12 @@
       
         
         
-          <li><a href="https://g-mrz.github.io/tags/linux/">linux</a></li>
+          <li><a href="https://g-mrz.github.io/tags/git/">git</a></li>
         
       
         
         
-          <li><a href="https://g-mrz.github.io/tags/hugo/">hugo</a></li>
+          <li><a href="https://g-mrz.github.io/tags/ssh/">ssh</a></li>
         
       
     </ul>
@@ -94,14 +94,16 @@
   
   
   <div id="contentBody">
-    <h2 id="ubuntu-hugo安装">ubuntu hugo安装</h2>
-<p><a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>下载hugo*.dep安装包</p>
-<p><code>在安装包存放目录使用sudo dpkg -i hugo*.dep进行安装</code></p>
-<h2 id="命令">命令</h2>
-<p><code>hugo new site [bolg name] 生成博客</code></p>
-<p><code>hugo new blog/xx.md 生成文章</code></p>
-<p><code>hugo server 启动hugo</code></p>
-<p><code>hugo 构建博客</code></p>
+    <h1 id="git-使用ssh密钥">git 使用ssh密钥</h1>
+<h2 id="生成ssh密钥">生成ssh密钥</h2>
+<p><code>ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot;</code></p>
+<h2 id="ssh-agent管理密钥">ssh-agent管理密钥</h2>
+<pre tabindex="0"><code># 手动启动ssh-agent
+$ eval &quot;$(ssh-agent -s)&quot;
+&gt; Agent pid 59566
+# 将ssh私钥添加到ssh-agent
+$ ssh-add ~/.ssh/id_ed25519
+</code></pre><p><code>将公钥存放至github</code></p>
 
   </div>
   <footer>

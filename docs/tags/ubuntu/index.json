@@ -3,7 +3,7 @@
         "ref": "https://g-mrz.github.io/blog/ubuntu/",
         "title": "Linux",
         "section": "blog",
-        "tags": ["ubuntu"],
+        "tags": ["linux","ubuntu"],
         "date" : "2021.08.15",
         "body": "命令 sudo apt install [name] 安装应用\nsudo apt remove [name] 卸载应用\nsudo apt-get update 更新访问源列表\nsudo apt-get upgrade 更新已安装软件\nsudo update-alternatives --config editor 配置默认文本编辑器\n"
     }

@@ -5,7 +5,16 @@
         "section": "blog",
         "tags": ["linux","hugo"],
         "date" : "2021.10.17",
-        "body": "hugo安装 下载nvim-win64.zip, 解压到本地目录（自己选), 在解压后文件中找到bin目录， 复制其绝对路径添加到Windows用户环境变量\n"
+        "body": "ubuntu hugo安装 https://github.com/gohugoio/hugo/releases下载hugo*.dep安装包\n在安装包存放目录使用sudo dpkg -i hugo*.dep进行安装\n命令 hugo new site [bolg name] 生成博客\nhugo new blog/xx.md 生成文章\nhugo server 启动hugo\nhugo 构建博客\n"
+    }
+,
+    {
+        "ref": "https://g-mrz.github.io/blog/ubuntu/",
+        "title": "Linux",
+        "section": "blog",
+        "tags": ["linux","ubuntu"],
+        "date" : "2021.08.15",
+        "body": "命令 sudo apt install [name] 安装应用\nsudo apt remove [name] 卸载应用\nsudo apt-get update 更新访问源列表\nsudo apt-get upgrade 更新已安装软件\nsudo update-alternatives --config editor 配置默认文本编辑器\n"
     }
 ,
     {

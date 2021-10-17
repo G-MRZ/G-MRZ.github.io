@@ -5,6 +5,6 @@
         "section": "blog",
         "tags": ["linux","hugo"],
         "date" : "2021.10.17",
-        "body": "hugo安装 下载nvim-win64.zip, 解压到本地目录（自己选), 在解压后文件中找到bin目录， 复制其绝对路径添加到Windows用户环境变量\n"
+        "body": "ubuntu hugo安装 https://github.com/gohugoio/hugo/releases下载hugo*.dep安装包\n在安装包存放目录使用sudo dpkg -i hugo*.dep进行安装\n命令 hugo new site [bolg name] 生成博客\nhugo new blog/xx.md 生成文章\nhugo server 启动hugo\nhugo 构建博客\n"
     }
 ]

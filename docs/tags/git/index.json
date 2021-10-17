@@ -1,0 +1,10 @@
+[
+    {
+        "ref": "https://g-mrz.github.io/blog/git-ssh/",
+        "title": "Git Ssh",
+        "section": "blog",
+        "tags": ["git","ssh"],
+        "date" : "2021.10.17",
+        "body": "git 使用ssh密钥 生成ssh密钥 ssh-keygen -t ed25519 -C \u0026quot;your_email@example.com\u0026quot;\nssh-agent管理密钥 # 手动启动ssh-agent\r$ eval \u0026quot;$(ssh-agent -s)\u0026quot;\r\u0026gt; Agent pid 59566\r# 将ssh私钥添加到ssh-agent\r$ ssh-add ~/.ssh/id_ed25519\r将公钥存放至github\n"
+    }
+]
