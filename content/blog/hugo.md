@@ -12,6 +12,8 @@ tags: ['linux', 'hugo']
 
 ```在安装包存放目录使用sudo dpkg -i hugo*.dep进行安装```
 
+## 命令
+
 ```hugo new site [bolg name] 生成博客```
 
 ```hugo new blog/xx.md 生成文章```
