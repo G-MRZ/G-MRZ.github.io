@@ -1,5 +1,14 @@
 [
     {
+        "ref": "https://g-mrz.github.io/blog/wsl%E5%AE%89%E8%A3%85%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2/",
+        "title": "Wsl安装图形界面",
+        "section": "blog",
+        "tags": ["wsl"],
+        "date" : "2021.10.24",
+        "body": "1,安装xorg sudo apt install xorg. xorg是xfce桌面环境基础依赖\n2,安装xfce4 sudo apt install xfce4\n3,安装xrdp sudo apt install xrdp\n配置xrdp端口、向xsession写入xfce4-session sudo sed -i 's/port=3389/port=3390/g' /etc/xrdp/xrdp.ini\rsudo echo xfce4-session \u0026gt;~/.xsession\rwindows中启动远程桌面连接xrdp服务器打开linux桌面环境\n配置中文包 sudo apt install language-pack-zh-hans language-pack-zh-hans-base\r#打开/etc/defalut/locale添加\rLANG=zh_CNUTF-8\rLANGUAGE=\u0026quot;zh_CN:zh\u0026quot;\rxrdp命令 sudo service xrdp restart 重启\nsudo service xrdp start 启动\n"
+    }
+,
+    {
         "ref": "https://g-mrz.github.io/blog/git-ssh/",
         "title": "Git Ssh",
         "section": "blog",
@@ -23,7 +32,7 @@
         "section": "blog",
         "tags": ["nvm"],
         "date" : "2021.08.15",
-        "body": "安装 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash\rcurl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash\r常用命令 nvm install [version number] 安装固定版本node\nnvm uninstall [version number] 卸载固定版本node\nnvm ls 列出已安装node\nnvm use [version number] 切换版本\nnvm ls-remote (linux)查看远程服务器所以可用版本 nvm ls available (windows)查看远程服务器所以可用版本\n"
+        "body": "常用命令 nvm install [version number] 安装某版本node\nnvm uninstall [version number] 卸载某版本node\nnvm ls 列出已安装node\nnvm use [version number] 切换版本\nnvm ls-remote (linux)查看远程服务器所以可用版本 nvm ls available (windows)查看远程服务器所以可用版本\n"
     }
 ,
     {
@@ -41,7 +50,7 @@
         "section": "blog",
         "tags": ["linux","ubuntu"],
         "date" : "2021.08.15",
-        "body": "安装 sudo apt install ranger, 如遇到Unable to locate package错误，则先执行sudo apt-get update。\n配置 执行ranger --copy-config=all 生成默认配置文件于~/.config/ranger\n命令 "
+        "body": "安装 1) git clone git@github.com:ranger/ranger.git(如克隆到~目录)\r2) cd ranger\r3）sudo make install\r配置 执行ranger --copy-config=all 生成默认配置文件于~/.config/ranger\n命令 "
     }
 ,
     {
@@ -57,8 +66,8 @@
         "ref": "https://g-mrz.github.io/blog/vim/",
         "title": "Vim插件",
         "section": "blog",
-        "tags": ["vim/neovim"],
+        "tags": ["vim"],
         "date" : "2021.07.31",
-        "body": "插件 1、vim-plug 插件管理器 https://github.com/junegunn/vim-plug\n2、coc-nvim 代码补全 https://github.com/neoclide/coc.nvim\n3、nerdtree 目录树 https://github.com/preservim/nerdtree\nvim-plug windows安装方法 iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`\rni $HOME/vimfiles/autoload/plug.vim -Force\rUnix安装方法 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \\\rhttps://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim\rvim配置文件添加 call plug#begin('~/.vim/plugged')\rPlug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }\rcall plug#end()\r/*\r~/.vim/plugged为插件安装目录 */\rvim-plug常用命令 :PlugInstall安装插件\n:PlugUpdate更新插件\n:PlugUpgrade更新vim-plug\n\u0026quot; NERD tree 插件会在首次使用 NERDTreeToggle 命令时进行加载\nPlug \u0026lsquo;scrooloose/nerdtree\u0026rsquo;, { \u0026lsquo;on\u0026rsquo;: \u0026lsquo;NERDTreeToggle\u0026rsquo; }\n\u0026quot; 多个命令\nPlug \u0026lsquo;junegunn/vim-github-dashboard\u0026rsquo;, { \u0026lsquo;on\u0026rsquo;: [\u0026lsquo;GHDashboard\u0026rsquo;, \u0026lsquo;GHActivity\u0026rsquo;] }\n\u0026quot; 当文件类型为 clojure 时，加载插件\nPlug \u0026lsquo;tpope/vim-fireplace\u0026rsquo;, { \u0026lsquo;for\u0026rsquo;: \u0026lsquo;clojure\u0026rsquo; }\n\u0026quot; 多种文件类型\nPlug \u0026lsquo;kovisoft/paredit\u0026rsquo;, { \u0026lsquo;for\u0026rsquo;: [\u0026lsquo;clojure\u0026rsquo;, \u0026lsquo;scheme\u0026rsquo;] }\n\u0026quot; 当首次执行 Vader 命令，且文件类型为 vader 时，加载插件\nPlug \u0026lsquo;junegunn/vader.vim\u0026rsquo;, { \u0026lsquo;on\u0026rsquo;: \u0026lsquo;Vader\u0026rsquo;, \u0026lsquo;for\u0026rsquo;: \u0026lsquo;vader\u0026rsquo; }\n\u0026quot; 插件按需加载后执行特定代码\nPlug \u0026lsquo;junegunn/goyo.vim\u0026rsquo;, { \u0026lsquo;for\u0026rsquo;: \u0026lsquo;markdown\u0026rsquo; }\nautocmd! User goyo.vim echom \u0026lsquo;Goyo is now loaded!\u0026rsquo;\ncoc-nvim 安装 call plug#begin('~/.vim/plugged')\r***\rPlug 'neoclide/coc.nvim', {'branch': 'release'}\rcall plug#end()\rcoc-nvim常用命令 :CocInstall [插件名称]安装插件\n:CocUninstall [插件名称]卸载插件\n:CocList extensions打开安装插件列表\n:CocConfig打开用户配置 coc-settings.json\n:CocLocalConfig打开项目配置文件\n:checkhealth检查 NeoVim 状态\n:CocInfo查看 coc.nvim 服务相关信息\n:CocRestart重启 coc 服务\n"
+        "body": "插件 1、vim-plug 插件管理器 https://github.com/junegunn/vim-plug\n2、coc-nvim 代码补全 https://github.com/neoclide/coc.nvim\nvim-plug windows安装方法 linux安装方法 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \\\rhttps://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim\rvim配置文件添加 call plug#begin('~/.vim/plugged')\rPlug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }\rcall plug#end()\r/*\r~/.vim/plugged为插件安装目录 */\rvim-plug常用命令 :PlugInstall安装插件 :PlugClean移除不在列表中的插件\n:PlugUpdate更新插件\n:PlugUpgrade更新vim-plug\n\u0026quot; NERD tree 插件会在首次使用 NERDTreeToggle 命令时进行加载\nPlug \u0026lsquo;scrooloose/nerdtree\u0026rsquo;, { \u0026lsquo;on\u0026rsquo;: \u0026lsquo;NERDTreeToggle\u0026rsquo; }\n\u0026quot; 多个命令\nPlug \u0026lsquo;junegunn/vim-github-dashboard\u0026rsquo;, { \u0026lsquo;on\u0026rsquo;: [\u0026lsquo;GHDashboard\u0026rsquo;, \u0026lsquo;GHActivity\u0026rsquo;] }\n\u0026quot; 当文件类型为 clojure 时，加载插件\nPlug \u0026lsquo;tpope/vim-fireplace\u0026rsquo;, { \u0026lsquo;for\u0026rsquo;: \u0026lsquo;clojure\u0026rsquo; }\n\u0026quot; 多种文件类型\nPlug \u0026lsquo;kovisoft/paredit\u0026rsquo;, { \u0026lsquo;for\u0026rsquo;: [\u0026lsquo;clojure\u0026rsquo;, \u0026lsquo;scheme\u0026rsquo;] }\n\u0026quot; 当首次执行 Vader 命令，且文件类型为 vader 时，加载插件\nPlug \u0026lsquo;junegunn/vader.vim\u0026rsquo;, { \u0026lsquo;on\u0026rsquo;: \u0026lsquo;Vader\u0026rsquo;, \u0026lsquo;for\u0026rsquo;: \u0026lsquo;vader\u0026rsquo; }\n\u0026quot; 插件按需加载后执行特定代码\nPlug \u0026lsquo;junegunn/goyo.vim\u0026rsquo;, { \u0026lsquo;for\u0026rsquo;: \u0026lsquo;markdown\u0026rsquo; }\ncoc-nvim 安装 call plug#begin('~/.vim/plugged')\r***\rPlug 'neoclide/coc.nvim', {'branch': 'release'}\rcall plug#end()\rcoc-nvim常用命令 :CocInstall [插件名称]安装插件\n:CocUninstall [插件名称]卸载插件\n:CocList extensions打开安装插件列表\n:CocConfig打开用户配置 coc-settings.json\n:CocLocalConfig打开项目配置文件\n:checkhealth检查 NeoVim 状态\n:CocInfo查看 coc.nvim 服务相关信息\n:CocRestart重启 coc 服务\n"
     }
 ]

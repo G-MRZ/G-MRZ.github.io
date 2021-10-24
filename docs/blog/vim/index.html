@@ -28,20 +28,20 @@
   
 
   <meta property="og:title" content="Vim插件" />
-<meta property="og:description" content="插件 1、vim-plug 插件管理器 https://github.com/junegunn/vim-plug 2、coc-nvim 代码补全 https://github.com/neoclide/coc.nvim 3、nerdtree 目录树 https://github.com/preservim/nerdtree vim-plug windows安装方法 iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |` ni $HOME/vimfiles/autoload/plug.vim -Force Unix" />
+<meta property="og:description" content="插件 1、vim-plug 插件管理器 https://github.com/junegunn/vim-plug 2、coc-nvim 代码补全 https://github.com/neoclide/coc.nvim vim-plug windows安装方法 linux安装方法 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim vim配置文件添加 call" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://g-mrz.github.io/blog/vim/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2021-07-31T23:56:54+08:00" />
 <meta property="article:modified_time" content="2021-07-31T23:56:54+08:00" />
 
 <meta itemprop="name" content="Vim插件">
-<meta itemprop="description" content="插件 1、vim-plug 插件管理器 https://github.com/junegunn/vim-plug 2、coc-nvim 代码补全 https://github.com/neoclide/coc.nvim 3、nerdtree 目录树 https://github.com/preservim/nerdtree vim-plug windows安装方法 iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |` ni $HOME/vimfiles/autoload/plug.vim -Force Unix"><meta itemprop="datePublished" content="2021-07-31T23:56:54+08:00" />
+<meta itemprop="description" content="插件 1、vim-plug 插件管理器 https://github.com/junegunn/vim-plug 2、coc-nvim 代码补全 https://github.com/neoclide/coc.nvim vim-plug windows安装方法 linux安装方法 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim vim配置文件添加 call"><meta itemprop="datePublished" content="2021-07-31T23:56:54+08:00" />
 <meta itemprop="dateModified" content="2021-07-31T23:56:54+08:00" />
-<meta itemprop="wordCount" content="472">
-<meta itemprop="keywords" content="vim/neovim," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="464">
+<meta itemprop="keywords" content="vim," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:image" content="https://g-mrz.github.io//img/avatar.jifi"/>
 <meta name="twitter:title" content="Vim插件"/>
-<meta name="twitter:description" content="插件 1、vim-plug 插件管理器 https://github.com/junegunn/vim-plug 2、coc-nvim 代码补全 https://github.com/neoclide/coc.nvim 3、nerdtree 目录树 https://github.com/preservim/nerdtree vim-plug windows安装方法 iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |` ni $HOME/vimfiles/autoload/plug.vim -Force Unix"/>
+<meta name="twitter:description" content="插件 1、vim-plug 插件管理器 https://github.com/junegunn/vim-plug 2、coc-nvim 代码补全 https://github.com/neoclide/coc.nvim vim-plug windows安装方法 linux安装方法 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim vim配置文件添加 call"/>
 
   <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -81,7 +81,7 @@
       
         
         
-          <li><a href="https://g-mrz.github.io/tags/vim/neovim/">vim/neovim</a></li>
+          <li><a href="https://g-mrz.github.io/tags/vim/">vim</a></li>
         
       
     </ul>
@@ -92,12 +92,9 @@
     <h1 id="插件">插件</h1>
 <p>1、vim-plug 插件管理器 <a href="https://github.com/junegunn/vim-plug">https://github.com/junegunn/vim-plug</a></p>
 <p>2、coc-nvim 代码补全 <a href="https://github.com/neoclide/coc.nvim">https://github.com/neoclide/coc.nvim</a></p>
-<p>3、nerdtree 目录树 <a href="https://github.com/preservim/nerdtree">https://github.com/preservim/nerdtree</a></p>
 <h2 id="vim-plug">vim-plug</h2>
 <h6 id="windows安装方法">windows安装方法</h6>
-<pre tabindex="0"><code>iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
-    ni $HOME/vimfiles/autoload/plug.vim -Force
-</code></pre><h6 id="unix安装方法">Unix安装方法</h6>
+<h6 id="linux安装方法">linux安装方法</h6>
 <pre tabindex="0"><code>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 </code></pre><h6 id="vim配置文件添加">vim配置文件添加</h6>
@@ -109,7 +106,8 @@ call plug#end()
   ~/.vim/plugged为插件安装目录 
  */
 </code></pre><h3 id="vim-plug常用命令">vim-plug常用命令</h3>
-<p><code>:PlugInstall</code>安装插件</p>
+<p><code>:PlugInstall</code>安装插件
+<code>:PlugClean</code>移除不在列表中的插件</p>
 <p><code>:PlugUpdate</code>更新插件</p>
 <p><code>:PlugUpgrade</code>更新vim-plug</p>
 <p>&quot; NERD tree 插件会在首次使用 NERDTreeToggle 命令时进行加载</p>
@@ -124,7 +122,6 @@ call plug#end()
 <p>Plug &lsquo;junegunn/vader.vim&rsquo;,  { &lsquo;on&rsquo;: &lsquo;Vader&rsquo;, &lsquo;for&rsquo;: &lsquo;vader&rsquo; }</p>
 <p>&quot; 插件按需加载后执行特定代码</p>
 <p>Plug &lsquo;junegunn/goyo.vim&rsquo;, { &lsquo;for&rsquo;: &lsquo;markdown&rsquo; }</p>
-<p>autocmd! User goyo.vim echom &lsquo;Goyo is now loaded!&rsquo;</p>
 <h2 id="coc-nvim">coc-nvim</h2>
 <h6 id="安装">安装</h6>
 <pre tabindex="0"><code>call plug#begin('~/.vim/plugged')

@@ -14,6 +14,6 @@
         "section": "blog",
         "tags": ["linux","ubuntu"],
         "date" : "2021.08.15",
-        "body": "安装 sudo apt install ranger, 如遇到Unable to locate package错误，则先执行sudo apt-get update。\n配置 执行ranger --copy-config=all 生成默认配置文件于~/.config/ranger\n命令 "
+        "body": "安装 1) git clone git@github.com:ranger/ranger.git(如克隆到~目录)\r2) cd ranger\r3）sudo make install\r配置 执行ranger --copy-config=all 生成默认配置文件于~/.config/ranger\n命令 "
     }
 ]

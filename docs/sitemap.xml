@@ -3,7 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://g-mrz.github.io/blog/</loc>
-    <lastmod>2021-10-17T16:27:54+08:00</lastmod>
+    <lastmod>2021-10-24T16:34:17+08:00</lastmod>
+  </url><url>
+    <loc>https://g-mrz.github.io/</loc>
+    <lastmod>2021-10-24T16:34:17+08:00</lastmod>
+  </url><url>
+    <loc>https://g-mrz.github.io/tags/</loc>
+    <lastmod>2021-10-24T16:34:17+08:00</lastmod>
+  </url><url>
+    <loc>https://g-mrz.github.io/tags/wsl/</loc>
+    <lastmod>2021-10-24T16:34:17+08:00</lastmod>
+  </url><url>
+    <loc>https://g-mrz.github.io/blog/wsl%E5%AE%89%E8%A3%85%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2/</loc>
+    <lastmod>2021-10-24T16:34:17+08:00</lastmod>
   </url><url>
     <loc>https://g-mrz.github.io/tags/git/</loc>
     <lastmod>2021-10-17T16:27:54+08:00</lastmod>
@@ -11,13 +23,7 @@
     <loc>https://g-mrz.github.io/blog/git-ssh/</loc>
     <lastmod>2021-10-17T16:27:54+08:00</lastmod>
   </url><url>
-    <loc>https://g-mrz.github.io/</loc>
-    <lastmod>2021-10-17T16:27:54+08:00</lastmod>
-  </url><url>
     <loc>https://g-mrz.github.io/tags/ssh/</loc>
-    <lastmod>2021-10-17T16:27:54+08:00</lastmod>
-  </url><url>
-    <loc>https://g-mrz.github.io/tags/</loc>
     <lastmod>2021-10-17T16:27:54+08:00</lastmod>
   </url><url>
     <loc>https://g-mrz.github.io/blog/hugo/</loc>
@@ -45,6 +51,9 @@
     <lastmod>2021-08-15T16:15:52+08:00</lastmod>
   </url><url>
     <loc>https://g-mrz.github.io/blog/neovim/</loc>
+    <lastmod>2021-08-08T15:02:23+08:00</lastmod>
+  </url><url>
+    <loc>https://g-mrz.github.io/tags/vim/</loc>
     <lastmod>2021-08-08T15:02:23+08:00</lastmod>
   </url><url>
     <loc>https://g-mrz.github.io/blog/vim/</loc>

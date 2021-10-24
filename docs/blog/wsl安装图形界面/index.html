@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>
+      
+          Wsl安装图形界面 - MRZ
+      
+  </title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="MRZ" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://g-mrz.github.io/img/favicon.ico">
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://g-mrz.github.io/style.min.97bb85fa803368d1a0b40a71c31e3362250d026a24891e30a6e9494c840233c6.css" integrity="sha256-l7uF&#43;oAzaNGgtApxwx4zYiUNAmokiR4wpulJTIQCM8Y=">
+  
+  
+  
+  <link rel="stylesheet" href="https://g-mrz.github.io/style-dark.min.0a647fb6c07e04b77b54fa0515d0a683d39ecdb251dba960fe1f966f7ff36fc2.css" media="(prefers-color-scheme: dark)" integrity="sha256-CmR/tsB&#43;BLd7VPoFFdCmg9OezbJR26lg/h&#43;Wb3/zb8I=">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  
+  
+
+  <meta property="og:title" content="Wsl安装图形界面" />
+<meta property="og:description" content="1,安装xorg sudo apt install xorg. xorg是xfce桌面环境基础依赖 2,安装xfce4 sudo apt install xfce4 3,安装xrdp sudo apt install xrdp 配置xrdp端口、向xsessi" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://g-mrz.github.io/blog/wsl%E5%AE%89%E8%A3%85%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2021-10-24T16:34:17+08:00" />
+<meta property="article:modified_time" content="2021-10-24T16:34:17+08:00" />
+
+<meta itemprop="name" content="Wsl安装图形界面">
+<meta itemprop="description" content="1,安装xorg sudo apt install xorg. xorg是xfce桌面环境基础依赖 2,安装xfce4 sudo apt install xfce4 3,安装xrdp sudo apt install xrdp 配置xrdp端口、向xsessi"><meta itemprop="datePublished" content="2021-10-24T16:34:17+08:00" />
+<meta itemprop="dateModified" content="2021-10-24T16:34:17+08:00" />
+<meta itemprop="wordCount" content="184">
+<meta itemprop="keywords" content="wsl," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:image" content="https://g-mrz.github.io//img/avatar.jifi"/>
+<meta name="twitter:title" content="Wsl安装图形界面"/>
+<meta name="twitter:description" content="1,安装xorg sudo apt install xorg. xorg是xfce桌面环境基础依赖 2,安装xfce4 sudo apt install xfce4 3,安装xrdp sudo apt install xrdp 配置xrdp端口、向xsessi"/>
+
+  <!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
+
+  
+  
+</head>
+
+  <body>
+    
+  <h1>Wsl安装图形界面</h1>
+  <header>
+  
+  <div class="avatar">
+    <img class="avatarMask" src="https://g-mrz.github.io//img/avatar.jifi" alt="">
+    <a href="https://g-mrz.github.io/"><img class="avatar-border" src="https://g-mrz.github.io//img/avatar.jfif" alt=""></a>
+  </div>
+  
+  <h2><a class="author" href="https://g-mrz.github.io/">MRZ</a></h2>
+</header>
+
+  
+  
+  
+  <p class="date">October 24, 2021</p>
+  
+  
+  
+  <div id="tags">
+    <ul>
+      
+        
+        
+          <li><a href="https://g-mrz.github.io/tags/wsl/">wsl</a></li>
+        
+      
+    </ul>
+  </div>
+  
+  
+  <div id="contentBody">
+    <h5 id="1安装xorg">1,安装xorg</h5>
+<p><code>sudo apt install xorg. xorg是xfce桌面环境基础依赖</code></p>
+<h4 id="2安装xfce4">2,安装xfce4</h4>
+<p><code>sudo apt install xfce4</code></p>
+<h4 id="3安装xrdp">3,安装xrdp</h4>
+<p><code>sudo apt install xrdp</code></p>
+<h5 id="配置xrdp端口向xsession写入xfce4-session">配置xrdp端口、向xsession写入xfce4-session</h5>
+<pre tabindex="0"><code>sudo sed -i 's/port=3389/port=3390/g' /etc/xrdp/xrdp.ini
+sudo echo xfce4-session &gt;~/.xsession
+</code></pre><p>windows中启动远程桌面连接xrdp服务器打开linux桌面环境</p>
+<h4 id="配置中文包">配置中文包</h4>
+<pre tabindex="0"><code>sudo apt install language-pack-zh-hans language-pack-zh-hans-base
+#打开/etc/defalut/locale添加
+LANG=zh_CNUTF-8
+LANGUAGE=&quot;zh_CN:zh&quot;
+
+</code></pre><h4 id="xrdp命令">xrdp命令</h4>
+<p><code>sudo service xrdp restart 重启</code></p>
+<p><code>sudo service xrdp start 启动</code></p>
+
+  </div>
+  <footer>
+  <p>
+  &copy; 2019 MRZ.
+  Powered by <a href="https://gohugo.io/">Hugo</a>
+  using the <a href="https://github.com/koirand/pulp/">pulp</a> theme.
+  </p>
+</footer>
+
+
+  </body>
+</html>
