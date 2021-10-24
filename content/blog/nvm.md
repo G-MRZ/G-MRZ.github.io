@@ -6,16 +6,11 @@ images: []
 tags: [ "nvm" ]
 ---
 
-# 安装
-
-```
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-```
 ## 常用命令
-```nvm install [version number]``` 安装固定版本node
 
-```nvm uninstall [version number]``` 卸载固定版本node
+```nvm install [version number]``` 安装某版本node
+
+```nvm uninstall [version number]``` 卸载某版本node
 
 ```nvm ls``` 列出已安装node
 
@@ -23,4 +18,3 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 ```nvm ls-remote``` (linux)查看远程服务器所以可用版本
 ```nvm ls available``` (windows)查看远程服务器所以可用版本
-

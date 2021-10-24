@@ -6,7 +6,11 @@ tags: ["linux","ubuntu"]
 ---
 
 # 安装
-```sudo apt install ranger```, 如遇到```Unable to locate package```错误，则先执行```sudo apt-get update```。
+```
+1) git clone git@github.com:ranger/ranger.git(如克隆到~目录)
+2) cd ranger
+3）sudo make install
+```
 
 # 配置
 执行```ranger --copy-config=all``` 生成默认配置文件于```~/.config/ranger```

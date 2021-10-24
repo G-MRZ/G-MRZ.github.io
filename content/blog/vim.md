@@ -3,7 +3,7 @@ title: "Vim插件"
 date: 2021-07-31T23:56:54+08:00
 draft: false
 images: []
-tags: [ "vim/neovim" ]
+tags: [ "vim" ]
 ---
 
 # 插件
@@ -11,15 +11,11 @@ tags: [ "vim/neovim" ]
 
 2、coc-nvim 代码补全 [https://github.com/neoclide/coc.nvim](https://github.com/neoclide/coc.nvim)
 
-3、nerdtree 目录树 [https://github.com/preservim/nerdtree](https://github.com/preservim/nerdtree)
-
 ## vim-plug
+
 ###### windows安装方法
-```
-iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
-    ni $HOME/vimfiles/autoload/plug.vim -Force
-```
-###### Unix安装方法
+
+###### linux安装方法
 ```
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -38,6 +34,7 @@ call plug#end()
 ### vim-plug常用命令
 
 ```:PlugInstall```安装插件
+```:PlugClean```移除不在列表中的插件
 
 ```:PlugUpdate```更新插件
 
@@ -67,10 +64,10 @@ Plug 'junegunn/vader.vim',  { 'on': 'Vader', 'for': 'vader' }
 
 Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
 
-autocmd! User goyo.vim echom 'Goyo is now loaded!'
-
 ## coc-nvim
+
 ###### 安装
+
 ```
 call plug#begin('~/.vim/plugged')
     ***
@@ -95,8 +92,3 @@ call plug#end()
 ```:CocInfo```查看 coc.nvim 服务相关信息
 
 ```:CocRestart```重启 coc 服务
-
-
-
-
-
