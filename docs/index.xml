@@ -48,7 +48,7 @@
       <pubDate>Sun, 15 Aug 2021 16:32:44 +0800</pubDate>
       
       <guid>https://g-mrz.github.io/blog/ubuntu/</guid>
-      <description>命令 sudo apt install [name] 安装应用 sudo apt remove [name] 卸载应用 sudo apt-get update 更新访问源列表 sudo apt-get upgrade 更新已安装软件 sudo update-alternatives --config editor 配置默认文本编辑器</description>
+      <description>Ubuntu命令 apt apt-get 作用 apt install apt-get install 安装软件包 apt remove apt-get remove 移除软件包 apt purge apt-get purge 移除软件包及配置文件 apt update apt-get update 刷新存储库索引 apt upgrade apt-get upgrade 升级所有可升级的软件包</description>
     </item>
     
     <item>
