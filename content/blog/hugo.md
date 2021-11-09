@@ -3,14 +3,8 @@ title: "Hugo"
 date: 2021-10-17T15:53:42+08:00
 draft: false 
 images: []
-tags: ['linux', 'hugo']
+tags: ['工具']
 ---
-
-## ubuntu hugo安装
-
-[https://github.com/gohugoio/hugo/releases](https://github.com/gohugoio/hugo/releases)下载hugo*.dep安装包
-
-```在安装包存放目录使用sudo dpkg -i hugo*.dep进行安装```
 
 ## 命令
 

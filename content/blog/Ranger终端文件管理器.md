@@ -2,7 +2,7 @@
 title: "Ranger终端文件管理器"
 date: 2021-08-15T16:15:52+08:00
 draft: false
-tags: ["linux","ubuntu"]
+tags: ["工具"]
 ---
 
 # 安装

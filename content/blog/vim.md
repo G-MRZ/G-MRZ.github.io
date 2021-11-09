@@ -3,7 +3,7 @@ title: "Vim插件"
 date: 2021-07-31T23:56:54+08:00
 draft: false
 images: []
-tags: [ "vim" ]
+tags: [ "工具" ]
 ---
 
 # 插件

@@ -3,7 +3,7 @@ title: "Git Ssh"
 date: 2021-10-17T16:27:54+08:00
 draft: false
 images: []
-tags: ['git', 'ssh']
+tags: ["工具"]
 ---
 
 # git 使用ssh密钥

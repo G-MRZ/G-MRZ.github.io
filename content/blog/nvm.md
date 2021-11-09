@@ -3,7 +3,7 @@ title: "Nvm"
 date: 2021-08-15T22:56:32+08:00
 draft: false
 images: []
-tags: [ "nvm" ]
+tags: [ "工具" ]
 ---
 
 ## 常用命令

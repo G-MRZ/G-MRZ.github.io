@@ -2,7 +2,7 @@
 title: "Neovim"
 date: 2021-08-08T15:02:23+08:00
 draft: false
-tags: ["vim/neovim"]
+tags: ["工具"]
 ---
 
 # 安装

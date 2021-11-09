@@ -1,12 +1,13 @@
 ---
-title: "Linux"
-date: 2021-08-15T16:32:44+08:00
+title: "Debian基本命令"
+date: 2021-11-09T22:35:39+08:00
 draft: false
 images: []
-tags: ["linux", "ubuntu"]
+tags: ["linux"]
 ---
 
-# Ubuntu命令
+### debian命令
+
 | apt              | apt-get              | 作用                           |
 | ---------------- | -------------------- | ------------------------------ |
 | apt install      | apt-get install      | 安装软件包                     |
@@ -19,5 +20,4 @@ tags: ["linux", "ubuntu"]
 | apt search       | apt-cache search     | 搜索应用程序                   |
 | apt show         | apt-cache show       | 显示装细节                     |
 
-
-```sudo update-alternatives --config editor``` 配置默认文本编辑器 
+```sudo update-alternatives --config editor``` 配置默认文本编辑器
