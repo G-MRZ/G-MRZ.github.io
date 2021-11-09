@@ -1,28 +1,19 @@
 [
     {
-        "ref": "https://g-mrz.github.io/blog/hugo/",
-        "title": "Hugo",
+        "ref": "https://g-mrz.github.io/blog/debian%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/",
+        "title": "Debian基本命令",
         "section": "blog",
-        "tags": ["linux","hugo"],
-        "date" : "2021.10.17",
-        "body": "ubuntu hugo安装 https://github.com/gohugoio/hugo/releases下载hugo*.dep安装包\n在安装包存放目录使用sudo dpkg -i hugo*.dep进行安装\n命令 hugo new site [bolg name] 生成博客\nhugo new blog/xx.md 生成文章\nhugo server 启动hugo\nhugo 构建博客\n"
+        "tags": ["linux"],
+        "date" : "2021.11.09",
+        "body": "debian命令    apt apt-get 作用     apt install apt-get install 安装软件包   apt remove apt-get remove 移除软件包   apt purge apt-get purge 移除软件包及配置文件   apt update apt-get update 刷新存储库索引   apt upgrade apt-get upgrade 升级所有可升级的软件包   apt autoremove apt-get autoremove 自动删除不需要的包   apt full-upgrade apt-get dist-upgrade 在升级软件包时自动处理依赖关系   apt search apt-cache search 搜索应用程序   apt show apt-cache show 显示装细节    sudo update-alternatives --config editor 配置默认文本编辑器\n"
     }
 ,
     {
-        "ref": "https://g-mrz.github.io/blog/ubuntu/",
-        "title": "Linux",
+        "ref": "https://g-mrz.github.io/blog/debian%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/",
+        "title": "wsl下Debian环境搭建",
         "section": "blog",
-        "tags": ["linux","ubuntu"],
-        "date" : "2021.08.15",
-        "body": "Ubuntu命令    apt apt-get 作用     apt install apt-get install 安装软件包   apt remove apt-get remove 移除软件包   apt purge apt-get purge 移除软件包及配置文件   apt update apt-get update 刷新存储库索引   apt upgrade apt-get upgrade 升级所有可升级的软件包   apt autoremove apt-get autoremove 自动删除不需要的包   apt full-upgrade apt-get dist-upgrade 在升级软件包时自动处理依赖关系   apt search apt-cache search 搜索应用程序   apt show apt-cache show 显示装细节    sudo update-alternatives --config editor 配置默认文本编辑器\n"
-    }
-,
-    {
-        "ref": "https://g-mrz.github.io/blog/ranger%E7%BB%88%E7%AB%AF%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/",
-        "title": "Ranger终端文件管理器",
-        "section": "blog",
-        "tags": ["linux","ubuntu"],
-        "date" : "2021.08.15",
-        "body": "安装 1) git clone git@github.com:ranger/ranger.git(如克隆到~目录)\r2) cd ranger\r3）sudo make install\r配置 执行ranger --copy-config=all 生成默认配置文件于~/.config/ranger\n命令 "
+        "tags": ["linux"],
+        "date" : "2021.11.09",
+        "body": "wsl下Debian安装 1、Microsoft Store直接下载安装\n2、https://docs.microsoft.com/en-us/windows/wsl/install-manual下载.Appx或者.AppxBundle安装包。解压于任意目录并运行解压出来的debian.exe程序\nhugo安装 https://github.com/gohugoio/hugo/releases下载hugo*.dep安装包\n在安装包存放目录使用sudo dpkg -i hugo*.dep进行安装\nwget curl git安装 sudo apt install wget curl git\nnvm安装 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash\nwget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash\ndebian基本命令\nhugo基本使用方式\nnvm基本使用方式\n"
     }
 ]

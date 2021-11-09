@@ -1,32 +1,5 @@
 [
     {
-        "ref": "https://g-mrz.github.io/blog/debian%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/",
-        "title": "Debian基本命令",
-        "section": "blog",
-        "tags": ["linux"],
-        "date" : "2021.11.09",
-        "body": "debian命令    apt apt-get 作用     apt install apt-get install 安装软件包   apt remove apt-get remove 移除软件包   apt purge apt-get purge 移除软件包及配置文件   apt update apt-get update 刷新存储库索引   apt upgrade apt-get upgrade 升级所有可升级的软件包   apt autoremove apt-get autoremove 自动删除不需要的包   apt full-upgrade apt-get dist-upgrade 在升级软件包时自动处理依赖关系   apt search apt-cache search 搜索应用程序   apt show apt-cache show 显示装细节    sudo update-alternatives --config editor 配置默认文本编辑器\n"
-    }
-,
-    {
-        "ref": "https://g-mrz.github.io/blog/debian%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/",
-        "title": "wsl下Debian环境搭建",
-        "section": "blog",
-        "tags": ["linux"],
-        "date" : "2021.11.09",
-        "body": "wsl下Debian安装 1、Microsoft Store直接下载安装\n2、https://docs.microsoft.com/en-us/windows/wsl/install-manual下载.Appx或者.AppxBundle安装包。解压于任意目录并运行解压出来的debian.exe程序\nhugo安装 https://github.com/gohugoio/hugo/releases下载hugo*.dep安装包\n在安装包存放目录使用sudo dpkg -i hugo*.dep进行安装\nwget curl git安装 sudo apt install wget curl git\nnvm安装 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash\nwget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash\ndebian基本命令\nhugo基本使用方式\nnvm基本使用方式\n"
-    }
-,
-    {
-        "ref": "https://g-mrz.github.io/blog/wsl%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/",
-        "title": "Wsl安装图形界面",
-        "section": "blog",
-        "tags": ["wsl"],
-        "date" : "2021.10.24",
-        "body": "wsl命令 wslconfig /list(wsl -l) 列出安装的子系统列表\rwslconfig /setdefault Ubuntu-20.04 配置默认子系统\rwslconfig /u Ubuntu-20.04 注销子系统\r1,安装xorg sudo apt install xorg. xorg是xfce桌面环境基础依赖\n2,安装xfce4 sudo apt install xfce4\n3,安装xrdp sudo apt install xrdp\n配置xrdp端口、向xsession写入xfce4-session sudo sed -i 's/port=3389/port=3390/g' /etc/xrdp/xrdp.ini\rsudo echo xfce4-session \u0026gt;~/.xsession\rwindows中启动远程桌面连接xrdp服务器打开linux桌面环境\n配置中文包 sudo apt install language-pack-zh-hans language-pack-zh-hans-base\r#打开/etc/defalut/locale添加\rLANG=zh_CNUTF-8\rLANGUAGE=\u0026quot;zh_CN:zh\u0026quot;\rxrdp命令 sudo service xrdp restart 重启\nsudo service xrdp start 启动\n"
-    }
-,
-    {
         "ref": "https://g-mrz.github.io/blog/git-ssh/",
         "title": "Git Ssh",
         "section": "blog",

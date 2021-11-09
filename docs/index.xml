@@ -5,14 +5,32 @@
     <link>https://g-mrz.github.io/</link>
     <description>Recent content on MRZ</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 24 Oct 2021 16:34:17 +0800</lastBuildDate><atom:link href="https://g-mrz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Nov 2021 22:35:39 +0800</lastBuildDate><atom:link href="https://g-mrz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debian基本命令</title>
+      <link>https://g-mrz.github.io/blog/debian%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Tue, 09 Nov 2021 22:35:39 +0800</pubDate>
+      
+      <guid>https://g-mrz.github.io/blog/debian%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</guid>
+      <description>debian命令 apt apt-get 作用 apt install apt-get install 安装软件包 apt remove apt-get remove 移除软件包 apt purge apt-get purge 移除软件包及配置文件 apt update apt-get update 刷新存储库索引 apt upgrade apt-get upgrade 升级所有可升级的软件包</description>
+    </item>
+    
+    <item>
+      <title>wsl下Debian环境搭建</title>
+      <link>https://g-mrz.github.io/blog/debian%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Tue, 09 Nov 2021 13:44:42 +0800</pubDate>
+      
+      <guid>https://g-mrz.github.io/blog/debian%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <description>wsl下Debian安装 1、Microsoft Store直接下载安装 2、https://docs.microsoft.com/en-us/w</description>
+    </item>
+    
     <item>
       <title>Wsl安装图形界面</title>
-      <link>https://g-mrz.github.io/blog/wsl%E5%AE%89%E8%A3%85%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2/</link>
+      <link>https://g-mrz.github.io/blog/wsl%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Sun, 24 Oct 2021 16:34:17 +0800</pubDate>
       
-      <guid>https://g-mrz.github.io/blog/wsl%E5%AE%89%E8%A3%85%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2/</guid>
-      <description>1,安装xorg sudo apt install xorg. xorg是xfce桌面环境基础依赖 2,安装xfce4 sudo apt install xfce4 3,安装xrdp sudo apt install xrdp 配置xrdp端口、向xsessi</description>
+      <guid>https://g-mrz.github.io/blog/wsl%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid>
+      <description>wsl命令 wslconfig /list(wsl -l) 列出安装的子系统列表 wslconfig /setdefault Ubuntu-20.04 配置默认子系统 wslconfig /u Ubuntu-20.04 注销子系统 1,安装xorg sudo apt install xorg. xorg是xfce桌面环境基础依赖 2,安装x</description>
     </item>
     
     <item>
@@ -30,7 +48,7 @@
       <pubDate>Sun, 17 Oct 2021 15:53:42 +0800</pubDate>
       
       <guid>https://g-mrz.github.io/blog/hugo/</guid>
-      <description>ubuntu hugo安装 https://github.com/gohugoio/hugo/releases下载hugo*.dep安装包 在安装包存放目录</description>
+      <description>命令 hugo new site [bolg name] 生成博客 hugo new blog/xx.md 生成文章 hugo server 启动hugo hugo 构建博客</description>
     </item>
     
     <item>
@@ -40,15 +58,6 @@
       
       <guid>https://g-mrz.github.io/blog/nvm/</guid>
       <description>常用命令 nvm install [version number] 安装某版本node nvm uninstall [version number] 卸载某版本node nvm ls 列出已安装node nvm use [version number] 切换版本 nvm ls-remote (linux)查看远程服务器所以可用版</description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://g-mrz.github.io/blog/ubuntu/</link>
-      <pubDate>Sun, 15 Aug 2021 16:32:44 +0800</pubDate>
-      
-      <guid>https://g-mrz.github.io/blog/ubuntu/</guid>
-      <description>Ubuntu命令 apt apt-get 作用 apt install apt-get install 安装软件包 apt remove apt-get remove 移除软件包 apt purge apt-get purge 移除软件包及配置文件 apt update apt-get update 刷新存储库索引 apt upgrade apt-get upgrade 升级所有可升级的软件包</description>
     </item>
     
     <item>
