@@ -12,6 +12,9 @@ images: []
 wslconfig /list(wsl -l) 列出安装的子系统列表
 wslconfig /setdefault Ubuntu-20.04 配置默认子系统
 wslconfig /u Ubuntu-20.04 注销子系统
+# WSL 子系统是基于 LxssManager 服务运行
+net stop LxssManager 
+net start LxssManager
 ```
 
 ##### 1,安装xorg

@@ -6,7 +6,7 @@ images: []
 tags: ["linux"]
 ---
 
-### debian命令
+### debian/Ubuntu命令
 
 | apt              | apt-get              | 作用                           |
 | ---------------- | -------------------- | ------------------------------ |
@@ -21,3 +21,9 @@ tags: ["linux"]
 | apt show         | apt-cache show       | 显示装细节                     |
 
 ```sudo update-alternatives --config editor``` 配置默认文本编辑器
+
+```echo $SHELL``` 显示当前shell
+
+```cat /etc/shells``` 显示所有安装的shell
+
+```chsh``` 配置默认shell

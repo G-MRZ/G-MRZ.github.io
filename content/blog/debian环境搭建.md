@@ -18,15 +18,28 @@ tags: ["linux"]
 
 ```在安装包存放目录使用sudo dpkg -i hugo*.dep进行安装```
 
-### wget curl git安装
+### wget curl git zsh ohmyzsh安装
 
 ```sudo apt install wget curl git```
+
+```sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"```
 
 ### nvm安装
 
 ```curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash```
 
 ```wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash```
+
+### 配置中文输入
+
+```
+#安装中文输入法
+sudo apt install ibus ibus-pinyin
+#配置输入法
+im-config
+#win+空格切换输入法
+```
+
 
 [debian基本命令](/blog/debian基本命令)
 
