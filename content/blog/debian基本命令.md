@@ -20,10 +20,9 @@ tags: ["linux"]
 | apt search       | apt-cache search     | 搜索应用程序                   |
 | apt show         | apt-cache show       | 显示装细节                     |
 
-```sudo update-alternatives --config editor``` 配置默认文本编辑器
-
-```echo $SHELL``` 显示当前shell
-
-```cat /etc/shells``` 显示所有安装的shell
-
-```chsh``` 配置默认shell
+```
+sudo update-alternatives --config editor # 配置默认文本编辑器
+echo $SHELL # 显示当前shell
+cat /etc/shells # 显示所有安装的shell
+chsh # 配置默认shell
+```
