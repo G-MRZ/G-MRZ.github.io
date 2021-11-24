@@ -12,7 +12,7 @@
       <pubDate>Tue, 09 Nov 2021 22:35:39 +0800</pubDate>
       
       <guid>https://g-mrz.github.io/blog/debian%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</guid>
-      <description>debian命令 apt apt-get 作用 apt install apt-get install 安装软件包 apt remove apt-get remove 移除软件包 apt purge apt-get purge 移除软件包及配置文件 apt update apt-get update 刷新存储库索引 apt upgrade apt-get upgrade 升级所有可升级的软件包</description>
+      <description>debian/Ubuntu命令 apt apt-get 作用 apt install apt-get install 安装软件包 apt remove apt-get remove 移除软件包 apt purge apt-get purge 移除软件包及配置文件 apt update apt-get update 刷新存储库索引 apt upgrade apt-get upgrade 升级所有</description>
     </item>
     
     <item>
@@ -30,7 +30,7 @@
       <pubDate>Sun, 24 Oct 2021 16:34:17 +0800</pubDate>
       
       <guid>https://g-mrz.github.io/blog/wsl%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid>
-      <description>wsl命令 wslconfig /list(wsl -l) 列出安装的子系统列表 wslconfig /setdefault Ubuntu-20.04 配置默认子系统 wslconfig /u Ubuntu-20.04 注销子系统 1,安装xorg sudo apt install xorg. xorg是xfce桌面环境基础依赖 2,安装x</description>
+      <description>wsl命令 wslconfig /list(wsl -l) 列出安装的子系统列表 wslconfig /setdefault Ubuntu-20.04 配置默认子系统 wslconfig /u Ubuntu-20.04 注销子系统 # WSL 子系统是基于 LxssManager 服务运行 net stop LxssManager net start LxssManager 1,安装xorg sudo apt install xorg. xor</description>
     </item>
     
     <item>

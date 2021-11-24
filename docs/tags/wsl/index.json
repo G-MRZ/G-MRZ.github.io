@@ -5,6 +5,6 @@
         "section": "blog",
         "tags": ["wsl"],
         "date" : "2021.10.24",
-        "body": "wsl命令 wslconfig /list(wsl -l) 列出安装的子系统列表\rwslconfig /setdefault Ubuntu-20.04 配置默认子系统\rwslconfig /u Ubuntu-20.04 注销子系统\r1,安装xorg sudo apt install xorg. xorg是xfce桌面环境基础依赖\n2,安装xfce4 sudo apt install xfce4\n3,安装xrdp sudo apt install xrdp\n配置xrdp端口、向xsession写入xfce4-session sudo sed -i 's/port=3389/port=3390/g' /etc/xrdp/xrdp.ini\rsudo echo xfce4-session \u0026gt;~/.xsession\rwindows中启动远程桌面连接xrdp服务器打开linux桌面环境\n配置中文包 sudo apt install language-pack-zh-hans language-pack-zh-hans-base\r#打开/etc/defalut/locale添加\rLANG=zh_CNUTF-8\rLANGUAGE=\u0026quot;zh_CN:zh\u0026quot;\rxrdp命令 sudo service xrdp restart 重启\nsudo service xrdp start 启动\n"
+        "body": "wsl命令 wslconfig /list(wsl -l) 列出安装的子系统列表\rwslconfig /setdefault Ubuntu-20.04 配置默认子系统\rwslconfig /u Ubuntu-20.04 注销子系统\r# WSL 子系统是基于 LxssManager 服务运行\rnet stop LxssManager net start LxssManager\r1,安装xorg sudo apt install xorg. xorg是xfce桌面环境基础依赖\n2,安装xfce4 sudo apt install xfce4\n3,安装xrdp sudo apt install xrdp\n配置xrdp端口、向xsession写入xfce4-session sudo sed -i 's/port=3389/port=3390/g' /etc/xrdp/xrdp.ini\rsudo echo xfce4-session \u0026gt;~/.xsession\rwindows中启动远程桌面连接xrdp服务器打开linux桌面环境\n配置中文包 sudo apt install language-pack-zh-hans language-pack-zh-hans-base\r#打开/etc/defalut/locale添加\rLANG=zh_CNUTF-8\rLANGUAGE=\u0026quot;zh_CN:zh\u0026quot;\rxrdp命令 sudo service xrdp restart 重启\nsudo service xrdp start 启动\n"
     }
 ]

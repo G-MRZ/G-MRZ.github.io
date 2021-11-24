@@ -28,20 +28,20 @@
   
 
   <meta property="og:title" content="Debian基本命令" />
-<meta property="og:description" content="debian命令 apt apt-get 作用 apt install apt-get install 安装软件包 apt remove apt-get remove 移除软件包 apt purge apt-get purge 移除软件包及配置文件 apt update apt-get update 刷新存储库索引 apt upgrade apt-get upgrade 升级所有可升级的软件包" />
+<meta property="og:description" content="debian/Ubuntu命令 apt apt-get 作用 apt install apt-get install 安装软件包 apt remove apt-get remove 移除软件包 apt purge apt-get purge 移除软件包及配置文件 apt update apt-get update 刷新存储库索引 apt upgrade apt-get upgrade 升级所有" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://g-mrz.github.io/blog/debian%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2021-11-09T22:35:39+08:00" />
 <meta property="article:modified_time" content="2021-11-09T22:35:39+08:00" />
 
 <meta itemprop="name" content="Debian基本命令">
-<meta itemprop="description" content="debian命令 apt apt-get 作用 apt install apt-get install 安装软件包 apt remove apt-get remove 移除软件包 apt purge apt-get purge 移除软件包及配置文件 apt update apt-get update 刷新存储库索引 apt upgrade apt-get upgrade 升级所有可升级的软件包"><meta itemprop="datePublished" content="2021-11-09T22:35:39+08:00" />
+<meta itemprop="description" content="debian/Ubuntu命令 apt apt-get 作用 apt install apt-get install 安装软件包 apt remove apt-get remove 移除软件包 apt purge apt-get purge 移除软件包及配置文件 apt update apt-get update 刷新存储库索引 apt upgrade apt-get upgrade 升级所有"><meta itemprop="datePublished" content="2021-11-09T22:35:39+08:00" />
 <meta itemprop="dateModified" content="2021-11-09T22:35:39+08:00" />
-<meta itemprop="wordCount" content="134">
+<meta itemprop="wordCount" content="180">
 <meta itemprop="keywords" content="linux," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:image" content="https://g-mrz.github.io//img/avatar.jifi"/>
 <meta name="twitter:title" content="Debian基本命令"/>
-<meta name="twitter:description" content="debian命令 apt apt-get 作用 apt install apt-get install 安装软件包 apt remove apt-get remove 移除软件包 apt purge apt-get purge 移除软件包及配置文件 apt update apt-get update 刷新存储库索引 apt upgrade apt-get upgrade 升级所有可升级的软件包"/>
+<meta name="twitter:description" content="debian/Ubuntu命令 apt apt-get 作用 apt install apt-get install 安装软件包 apt remove apt-get remove 移除软件包 apt purge apt-get purge 移除软件包及配置文件 apt update apt-get update 刷新存储库索引 apt upgrade apt-get upgrade 升级所有"/>
 
   <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -89,7 +89,7 @@
   
   
   <div id="contentBody">
-    <h3 id="debian命令">debian命令</h3>
+    <h3 id="debianubuntu命令">debian/Ubuntu命令</h3>
 <table>
 <thead>
 <tr>
@@ -146,8 +146,11 @@
 </tr>
 </tbody>
 </table>
-<p><code>sudo update-alternatives --config editor</code> 配置默认文本编辑器</p>
-
+<pre tabindex="0"><code>sudo update-alternatives --config editor # 配置默认文本编辑器
+echo $SHELL # 显示当前shell
+cat /etc/shells # 显示所有安装的shell
+chsh # 配置默认shell
+</code></pre>
   </div>
   <footer>
   <p>

@@ -37,7 +37,7 @@
 <meta itemprop="name" content="wsl下Debian环境搭建">
 <meta itemprop="description" content="wsl下Debian安装 1、Microsoft Store直接下载安装 2、https://docs.microsoft.com/en-us/w"><meta itemprop="datePublished" content="2021-11-09T13:44:42+08:00" />
 <meta itemprop="dateModified" content="2021-11-09T13:44:42+08:00" />
-<meta itemprop="wordCount" content="293">
+<meta itemprop="wordCount" content="342">
 <meta itemprop="keywords" content="linux," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:image" content="https://g-mrz.github.io//img/avatar.jifi"/>
 <meta name="twitter:title" content="wsl下Debian环境搭建"/>
@@ -95,12 +95,19 @@
 <h3 id="hugo安装">hugo安装</h3>
 <p><a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>下载hugo*.dep安装包</p>
 <p><code>在安装包存放目录使用sudo dpkg -i hugo*.dep进行安装</code></p>
-<h3 id="wget-curl-git安装">wget curl git安装</h3>
+<h3 id="wget-curl-git-zsh-ohmyzsh安装">wget curl git zsh ohmyzsh安装</h3>
 <p><code>sudo apt install wget curl git</code></p>
+<p><code>sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;</code></p>
 <h3 id="nvm安装">nvm安装</h3>
 <p><code>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash</code></p>
 <p><code>wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash</code></p>
-<p><a href="https://g-mrz.github.io/blog/debian%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4">debian基本命令</a></p>
+<h3 id="配置中文输入">配置中文输入</h3>
+<pre tabindex="0"><code>#安装中文输入法
+sudo apt install ibus ibus-pinyin
+#配置输入法
+im-config
+#win+空格切换输入法
+</code></pre><p><a href="https://g-mrz.github.io/blog/debian%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4">debian基本命令</a></p>
 <p><a href="https://g-mrz.github.io/blog/hugo">hugo基本使用方式</a></p>
 <p><a href="https://g-mrz.github.io/blog/nvm">nvm基本使用方式</a></p>
 
