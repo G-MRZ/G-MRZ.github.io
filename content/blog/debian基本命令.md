@@ -22,6 +22,7 @@ tags: ["linux"]
 
 ```
 sudo update-alternatives --config editor # 配置默认文本编辑器
+sudo update-alternatives --config x-terminal-emulator # 配置默认终端
 echo $SHELL # 显示当前shell
 cat /etc/shells # 显示所有安装的shell
 chsh # 配置默认shell
