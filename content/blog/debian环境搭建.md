@@ -20,7 +20,7 @@ tags: ["linux"]
 
 ### wget curl git zsh ohmyzsh安装
 
-```sudo apt install wget curl git```
+```sudo apt install wget curl git ranger hugo vim zsh```
 
 ```sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"```
 
