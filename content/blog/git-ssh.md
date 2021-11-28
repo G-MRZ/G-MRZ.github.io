@@ -6,15 +6,13 @@ images: []
 tags: ["工具"]
 ---
 
-# git 使用ssh密钥
-
 ## 生成ssh密钥
 
 ```ssh-keygen -t ed25519 -C "your_email@example.com"```
 
 ## ssh-agent管理密钥
 
-```
+```Shell
 # 手动启动ssh-agent
 $ eval "$(ssh-agent -s)"
 > Agent pid 59566

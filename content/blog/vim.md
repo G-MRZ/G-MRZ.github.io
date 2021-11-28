@@ -6,22 +6,23 @@ images: []
 tags: [ "工具" ]
 ---
 
-# 插件
+##### 插件
+
+```html
 1、vim-plug 插件管理器 [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
-
 2、coc-nvim 代码补全 [https://github.com/neoclide/coc.nvim](https://github.com/neoclide/coc.nvim)
-
-## vim-plug
-
-###### windows安装方法
-
-###### linux安装方法
 ```
+
+##### vim-plug linux安装方法
+
+```Shell
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
-###### vim配置文件添加
-```
+
+##### vim配置文件添加
+
+```Shell
 call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 call plug#end()
@@ -31,64 +32,33 @@ call plug#end()
  */
 ```
 
-### vim-plug常用命令
+##### vim-plug常用命令
 
-```:PlugInstall```安装插件
-```:PlugClean```移除不在列表中的插件
-
-```:PlugUpdate```更新插件
-
-```:PlugUpgrade```更新vim-plug
-
-" NERD tree 插件会在首次使用 NERDTreeToggle 命令时进行加载
-
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-
-" 多个命令
-
-Plug 'junegunn/vim-github-dashboard', { 'on': ['GHDashboard', 'GHActivity'] }
-
-" 当文件类型为 clojure 时，加载插件
-
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-
-" 多种文件类型
-
-Plug 'kovisoft/paredit', { 'for': ['clojure', 'scheme'] }
-
-" 当首次执行 Vader 命令，且文件类型为 vader 时，加载插件
-
-Plug 'junegunn/vader.vim',  { 'on': 'Vader', 'for': 'vader' }
-
-" 插件按需加载后执行特定代码
-
-Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
-
-## coc-nvim
-
-###### 安装
-
+```vim
+:PlugInstall " 安装插件
+:PlugClean " 移除不在列表中的插件
+:PlugUpdate " 更新插件
+:PlugUpgrade " 更新vim-plug
 ```
+
+###### coc-vim安装
+
+```vim
 call plug#begin('~/.vim/plugged')
     ***
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 ```
 
-### coc-nvim常用命令
+##### coc-nvim常用命令
 
-```:CocInstall [插件名称]```安装插件
-
-```:CocUninstall [插件名称]```卸载插件
-
-```:CocList extensions```打开安装插件列表
-
-```:CocConfig```打开用户配置 ```coc-settings.json```
-
-```:CocLocalConfig```打开项目配置文件
-
-```:checkhealth```检查 NeoVim 状态
-
-```:CocInfo```查看 coc.nvim 服务相关信息
-
-```:CocRestart```重启 coc 服务
+```vim
+:CocInstall [插件名称] " 安装插件
+:CocUninstall [插件名称] " 卸载插件
+:CocList extensions " 打开安装插件列表
+:CocConfig " 打开用户配置 
+:CocLocalConfig " 打开项目配置文件
+:checkhealth " 检查 NeoVim 状态
+:CocInfo " 查看 coc.nvim 服务相关信息
+:CocRestart " 重启 coc 服务
+```
