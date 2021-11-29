@@ -8,10 +8,9 @@ tags: ['工具']
 
 ## 命令
 
-```hugo new site [bolg name] 生成博客```
-
-```hugo new blog/xx.md 生成文章```
-
-```hugo server 启动hugo```
-
-```hugo 构建博客```
+```Shell
+hugo new site [bolg name] # 生成博客
+hugo new blog/xx.md # 生成文章
+hugo server # 启动hugo
+hugo # 构建博客
+```
