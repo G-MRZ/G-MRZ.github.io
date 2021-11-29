@@ -37,7 +37,7 @@
 <meta itemprop="name" content="Debian基本命令">
 <meta itemprop="description" content="debian/Ubuntu命令 apt apt-get 作用 apt install apt-get install 安装软件包 apt remove apt-get remove 移除软件包 apt purge apt-get purge 移除软件包及配置文件 apt update apt-get update 刷新存储库索引 apt upgrade apt-get upgrade 升级所有"><meta itemprop="datePublished" content="2021-11-09T22:35:39+08:00" />
 <meta itemprop="dateModified" content="2021-11-09T22:35:39+08:00" />
-<meta itemprop="wordCount" content="180">
+<meta itemprop="wordCount" content="191">
 <meta itemprop="keywords" content="linux," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:image" content="https://g-mrz.github.io//img/avatar.jifi"/>
 <meta name="twitter:title" content="Debian基本命令"/>
@@ -146,11 +146,12 @@
 </tr>
 </tbody>
 </table>
-<pre tabindex="0"><code>sudo update-alternatives --config editor # 配置默认文本编辑器
-echo $SHELL # 显示当前shell
-cat /etc/shells # 显示所有安装的shell
-chsh # 配置默认shell
-</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Shell" data-lang="Shell">sudo update-alternatives --config editor <span style="color:#75715e"># 配置默认文本编辑器</span>
+sudo update-alternatives --config x-terminal-emulator <span style="color:#75715e"># 配置默认终端</span>
+echo $SHELL <span style="color:#75715e"># 显示当前shell</span>
+cat /etc/shells <span style="color:#75715e"># 显示所有安装的shell</span>
+chsh <span style="color:#75715e"># 配置默认shell</span>
+</code></pre></div>
   </div>
   <footer>
   <p>

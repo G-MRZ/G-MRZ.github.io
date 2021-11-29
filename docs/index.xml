@@ -16,30 +16,12 @@
     </item>
     
     <item>
-      <title>wsl下Debian环境搭建</title>
-      <link>https://g-mrz.github.io/blog/debian%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
-      <pubDate>Tue, 09 Nov 2021 13:44:42 +0800</pubDate>
-      
-      <guid>https://g-mrz.github.io/blog/debian%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
-      <description>wsl下Debian安装 1、Microsoft Store直接下载安装 2、https://docs.microsoft.com/en-us/w</description>
-    </item>
-    
-    <item>
-      <title>Wsl安装图形界面</title>
-      <link>https://g-mrz.github.io/blog/wsl%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</link>
-      <pubDate>Sun, 24 Oct 2021 16:34:17 +0800</pubDate>
-      
-      <guid>https://g-mrz.github.io/blog/wsl%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid>
-      <description>wsl命令 wslconfig /list(wsl -l) 列出安装的子系统列表 wslconfig /setdefault Ubuntu-20.04 配置默认子系统 wslconfig /u Ubuntu-20.04 注销子系统 # WSL 子系统是基于 LxssManager 服务运行 net stop LxssManager net start LxssManager 1,安装xorg sudo apt install xorg. xor</description>
-    </item>
-    
-    <item>
       <title>Git Ssh</title>
       <link>https://g-mrz.github.io/blog/git-ssh/</link>
       <pubDate>Sun, 17 Oct 2021 16:27:54 +0800</pubDate>
       
       <guid>https://g-mrz.github.io/blog/git-ssh/</guid>
-      <description>git 使用ssh密钥 生成ssh密钥 ssh-keygen -t ed25519 -C &amp;quot;your_email@example.com&amp;quot; ssh-agent管理密钥 # 手动启动ssh-agent $ eval &amp;quot;$(ssh-agent -s)&amp;quot; &amp;gt; Agent pid 59566 # 将ssh私钥添加到ssh-a</description>
+      <description>生成ssh密钥 ssh-keygen -t ed25519 -C &amp;quot;your_email@example.com&amp;quot; ssh-agent管理密钥 # 手动启动ssh-agent $ eval &amp;#34;$(ssh-agent -s)&amp;#34; &amp;gt; Agent pid 59566 # 将ssh私钥添加到ssh-agent $ ssh-add ~/.ssh/id_ed25519 将</description>
     </item>
     
     <item>
@@ -48,7 +30,7 @@
       <pubDate>Sun, 17 Oct 2021 15:53:42 +0800</pubDate>
       
       <guid>https://g-mrz.github.io/blog/hugo/</guid>
-      <description>命令 hugo new site [bolg name] 生成博客 hugo new blog/xx.md 生成文章 hugo server 启动hugo hugo 构建博客</description>
+      <description>命令 hugo new site [bolg name] # 生成博客 hugo new blog/xx.md # 生成文章 hugo server # 启动hugo hugo # 构建博客</description>
     </item>
     
     <item>
@@ -57,7 +39,7 @@
       <pubDate>Sun, 15 Aug 2021 22:56:32 +0800</pubDate>
       
       <guid>https://g-mrz.github.io/blog/nvm/</guid>
-      <description>常用命令 nvm install [version number] 安装某版本node nvm uninstall [version number] 卸载某版本node nvm ls 列出已安装node nvm use [version number] 切换版本 nvm ls-remote (linux)查看远程服务器所以可用版</description>
+      <description>常用命令 nvm install [version number] # 安装某版本node nvm uninstall [version number] # 卸载某版本node nvm ls # 列出已安装node nvm use [version number] # 切换版本 nvm ls-remote # (linux)查看远程服务器</description>
     </item>
     
     <item>
@@ -66,7 +48,7 @@
       <pubDate>Sun, 15 Aug 2021 16:15:52 +0800</pubDate>
       
       <guid>https://g-mrz.github.io/blog/ranger%E7%BB%88%E7%AB%AF%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/</guid>
-      <description>安装 1) git clone git@github.com:ranger/ranger.git(如克隆到~目录) 2) cd ranger 3）sudo make install 配置 执行ranger --copy-config=all 生成</description>
+      <description>安装 1, git clone git@github.com:ranger/ranger.git(如克隆到~目录) 2, cd ranger 3, sudo make install 生成配置 ranger --copy-config=all # 生成默认配置文件于~</description>
     </item>
     
     <item>
@@ -75,7 +57,7 @@
       <pubDate>Sun, 08 Aug 2021 15:02:23 +0800</pubDate>
       
       <guid>https://g-mrz.github.io/blog/neovim/</guid>
-      <description>安装 windows 下载nvim-win64.zip, 解压到本地目录（自己选), 在解压后文件中找到bin目录， 复制其绝对路径添加到Windows用户环境变</description>
+      <description>安装 ### windows 下载[nvim-win64.zip](https://github.com/neovim/neovim/releases), 解压到本</description>
     </item>
     
     <item>
@@ -84,7 +66,7 @@
       <pubDate>Sat, 31 Jul 2021 23:56:54 +0800</pubDate>
       
       <guid>https://g-mrz.github.io/blog/vim/</guid>
-      <description>插件 1、vim-plug 插件管理器 https://github.com/junegunn/vim-plug 2、coc-nvim 代码补全 https://github.com/neoclide/coc.nvim vim-plug windows安装方法 linux安装方法 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim vim配置文件添加 call</description>
+      <description>插件 1、vim-plug 插件管理器 [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug) 2、coc-nvim 代码补全 [https://github.com/neoclide/coc.nvim](https://github.com/neoclide/coc.nvim) vim-plug linux安装方法 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim vim配置文件添加 call plug#begin(&amp;#39;~/.vim/plugged&amp;#39;) Plug &amp;#39;scrooloose/nerdtree&amp;#39;, { &amp;#39;on&amp;#39;: &amp;#39;NERDTreeToggle&amp;#39; } call plug#end() /* ~</description>
     </item>
     
   </channel>

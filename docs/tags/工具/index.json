@@ -5,7 +5,7 @@
         "section": "blog",
         "tags": ["工具"],
         "date" : "2021.10.17",
-        "body": "git 使用ssh密钥 生成ssh密钥 ssh-keygen -t ed25519 -C \u0026quot;your_email@example.com\u0026quot;\nssh-agent管理密钥 # 手动启动ssh-agent\r$ eval \u0026quot;$(ssh-agent -s)\u0026quot;\r\u0026gt; Agent pid 59566\r# 将ssh私钥添加到ssh-agent\r$ ssh-add ~/.ssh/id_ed25519\r将公钥存放至github\n"
+        "body": "生成ssh密钥 ssh-keygen -t ed25519 -C \u0026quot;your_email@example.com\u0026quot;\nssh-agent管理密钥 # 手动启动ssh-agent $ eval \u0026#34;$(ssh-agent -s)\u0026#34; \u0026gt; Agent pid 59566 # 将ssh私钥添加到ssh-agent $ ssh-add ~/.ssh/id_ed25519 将公钥存放至github\n"
     }
 ,
     {
@@ -14,7 +14,7 @@
         "section": "blog",
         "tags": ["工具"],
         "date" : "2021.10.17",
-        "body": "命令 hugo new site [bolg name] 生成博客\nhugo new blog/xx.md 生成文章\nhugo server 启动hugo\nhugo 构建博客\n"
+        "body": "命令 hugo new site [bolg name] # 生成博客 hugo new blog/xx.md # 生成文章 hugo server # 启动hugo hugo # 构建博客 "
     }
 ,
     {
@@ -23,7 +23,7 @@
         "section": "blog",
         "tags": ["工具"],
         "date" : "2021.08.15",
-        "body": "常用命令 nvm install [version number] 安装某版本node\nnvm uninstall [version number] 卸载某版本node\nnvm ls 列出已安装node\nnvm use [version number] 切换版本\nnvm ls-remote (linux)查看远程服务器所以可用版本 nvm ls available (windows)查看远程服务器所以可用版本\n"
+        "body": "常用命令 nvm install [version number] # 安装某版本node nvm uninstall [version number] # 卸载某版本node nvm ls # 列出已安装node nvm use [version number] # 切换版本 nvm ls-remote # (linux)查看远程服务器所以可用版本 nvm ls available # (windows)查看远程服务器所以可用版本 "
     }
 ,
     {
@@ -32,7 +32,7 @@
         "section": "blog",
         "tags": ["工具"],
         "date" : "2021.08.15",
-        "body": "安装 1) git clone git@github.com:ranger/ranger.git(如克隆到~目录)\r2) cd ranger\r3）sudo make install\r配置 执行ranger --copy-config=all 生成默认配置文件于~/.config/ranger\n命令 "
+        "body": "安装 1, git clone git@github.com:ranger/ranger.git(如克隆到~目录) 2, cd ranger 3, sudo make install 生成配置 ranger --copy-config=all # 生成默认配置文件于~/.config/ranger 常用命令 touch \u0026lt;文件名\u0026gt; #创建文件 mkdir \u0026lt;文件夹名称\u0026gt; #创建文件夹 "
     }
 ,
     {
@@ -41,7 +41,7 @@
         "section": "blog",
         "tags": ["工具"],
         "date" : "2021.08.08",
-        "body": "安装 windows 下载nvim-win64.zip, 解压到本地目录（自己选), 在解压后文件中找到bin目录， 复制其绝对路径添加到Windows用户环境变量\nwindows配置文件路径~/AppData/Local/nvim/init.vim\nlinux sudo apt install neovim\n配置文件路径~.confignvim/init.vim\nvim-plug安装 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 命令 :terminalneovim中打开终端\n"
+        "body": "安装 ### windows 下载[nvim-win64.zip](https://github.com/neovim/neovim/releases), 解压到本地目录（自己选), 在解压后文件中找到bin目录， 复制其绝对路径添加到Windows用户环境变量 ~/AppData/Local/nvim/init.vim \u0026lt;!--windows配置文件路径--\u0026gt; ### linux sudo apt install neovim ~.config/nvim/init.vim \u0026lt;!--配置文件路径--\u0026gt; vim-plug安装 sh -c \u0026#39;curl -fLo \u0026#34;${XDG_DATA_HOME:-$HOME/.local/share}\u0026#34;/nvim/site/autoload/plug.vim --create-dirs \\  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 命令 :terminal # neovim中打开终端 "
     }
 ,
     {
@@ -50,6 +50,6 @@
         "section": "blog",
         "tags": ["工具"],
         "date" : "2021.07.31",
-        "body": "插件 1、vim-plug 插件管理器 https://github.com/junegunn/vim-plug\n2、coc-nvim 代码补全 https://github.com/neoclide/coc.nvim\nvim-plug windows安装方法 linux安装方法 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \\\rhttps://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim\rvim配置文件添加 call plug#begin('~/.vim/plugged')\rPlug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }\rcall plug#end()\r/*\r~/.vim/plugged为插件安装目录 */\rvim-plug常用命令 :PlugInstall安装插件 :PlugClean移除不在列表中的插件\n:PlugUpdate更新插件\n:PlugUpgrade更新vim-plug\n\u0026quot; NERD tree 插件会在首次使用 NERDTreeToggle 命令时进行加载\nPlug \u0026lsquo;scrooloose/nerdtree\u0026rsquo;, { \u0026lsquo;on\u0026rsquo;: \u0026lsquo;NERDTreeToggle\u0026rsquo; }\n\u0026quot; 多个命令\nPlug \u0026lsquo;junegunn/vim-github-dashboard\u0026rsquo;, { \u0026lsquo;on\u0026rsquo;: [\u0026lsquo;GHDashboard\u0026rsquo;, \u0026lsquo;GHActivity\u0026rsquo;] }\n\u0026quot; 当文件类型为 clojure 时，加载插件\nPlug \u0026lsquo;tpope/vim-fireplace\u0026rsquo;, { \u0026lsquo;for\u0026rsquo;: \u0026lsquo;clojure\u0026rsquo; }\n\u0026quot; 多种文件类型\nPlug \u0026lsquo;kovisoft/paredit\u0026rsquo;, { \u0026lsquo;for\u0026rsquo;: [\u0026lsquo;clojure\u0026rsquo;, \u0026lsquo;scheme\u0026rsquo;] }\n\u0026quot; 当首次执行 Vader 命令，且文件类型为 vader 时，加载插件\nPlug \u0026lsquo;junegunn/vader.vim\u0026rsquo;, { \u0026lsquo;on\u0026rsquo;: \u0026lsquo;Vader\u0026rsquo;, \u0026lsquo;for\u0026rsquo;: \u0026lsquo;vader\u0026rsquo; }\n\u0026quot; 插件按需加载后执行特定代码\nPlug \u0026lsquo;junegunn/goyo.vim\u0026rsquo;, { \u0026lsquo;for\u0026rsquo;: \u0026lsquo;markdown\u0026rsquo; }\ncoc-nvim 安装 call plug#begin('~/.vim/plugged')\r***\rPlug 'neoclide/coc.nvim', {'branch': 'release'}\rcall plug#end()\rcoc-nvim常用命令 :CocInstall [插件名称]安装插件\n:CocUninstall [插件名称]卸载插件\n:CocList extensions打开安装插件列表\n:CocConfig打开用户配置 coc-settings.json\n:CocLocalConfig打开项目配置文件\n:checkhealth检查 NeoVim 状态\n:CocInfo查看 coc.nvim 服务相关信息\n:CocRestart重启 coc 服务\n"
+        "body": "插件 1、vim-plug 插件管理器 [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug) 2、coc-nvim 代码补全 [https://github.com/neoclide/coc.nvim](https://github.com/neoclide/coc.nvim) vim-plug linux安装方法 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \\  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim vim配置文件添加 call plug#begin(\u0026#39;~/.vim/plugged\u0026#39;) Plug \u0026#39;scrooloose/nerdtree\u0026#39;, { \u0026#39;on\u0026#39;: \u0026#39;NERDTreeToggle\u0026#39; } call plug#end() /* ~/.vim/plugged为插件安装目录 */ vim-plug常用命令 :PlugInstall \u0026#34; 安装插件:PlugClean \u0026#34; 移除不在列表中的插件:PlugUpdate \u0026#34; 更新插件:PlugUpgrade \u0026#34; 更新vim-plugcoc-vim安装 call plug#begin(\u0026#39;~/.vim/plugged\u0026#39;) *** Plug \u0026#39;neoclide/coc.nvim\u0026#39;, {\u0026#39;branch\u0026#39;: \u0026#39;release\u0026#39;}call plug#end()coc-nvim常用命令 :CocInstall [插件名称] \u0026#34; 安装插件:CocUninstall [插件名称] \u0026#34; 卸载插件:CocList extensions \u0026#34; 打开安装插件列表:CocConfig \u0026#34; 打开用户配置 :CocLocalConfig \u0026#34; 打开项目配置文件:checkhealth \u0026#34; 检查 NeoVim 状态:CocInfo \u0026#34; 查看 coc.nvim 服务相关信息:CocRestart \u0026#34; 重启 coc 服务"
     }
 ]

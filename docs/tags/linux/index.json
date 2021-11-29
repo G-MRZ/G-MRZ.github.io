@@ -5,15 +5,6 @@
         "section": "blog",
         "tags": ["linux"],
         "date" : "2021.11.09",
-        "body": "debian/Ubuntu命令    apt apt-get 作用     apt install apt-get install 安装软件包   apt remove apt-get remove 移除软件包   apt purge apt-get purge 移除软件包及配置文件   apt update apt-get update 刷新存储库索引   apt upgrade apt-get upgrade 升级所有可升级的软件包   apt autoremove apt-get autoremove 自动删除不需要的包   apt full-upgrade apt-get dist-upgrade 在升级软件包时自动处理依赖关系   apt search apt-cache search 搜索应用程序   apt show apt-cache show 显示装细节    sudo update-alternatives --config editor # 配置默认文本编辑器\recho $SHELL # 显示当前shell\rcat /etc/shells # 显示所有安装的shell\rchsh # 配置默认shell\r"
-    }
-,
-    {
-        "ref": "https://g-mrz.github.io/blog/debian%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/",
-        "title": "wsl下Debian环境搭建",
-        "section": "blog",
-        "tags": ["linux"],
-        "date" : "2021.11.09",
-        "body": "wsl下Debian安装 1、Microsoft Store直接下载安装\n2、https://docs.microsoft.com/en-us/windows/wsl/install-manual下载.Appx或者.AppxBundle安装包。解压于任意目录并运行解压出来的debian.exe程序\nhugo安装 https://github.com/gohugoio/hugo/releases下载hugo*.dep安装包\n在安装包存放目录使用sudo dpkg -i hugo*.dep进行安装\nwget curl git zsh ohmyzsh安装 sudo apt install wget curl git\nsh -c \u0026quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\u0026quot;\nnvm安装 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash\nwget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash\n配置中文输入 #安装中文输入法\rsudo apt install ibus ibus-pinyin\r#配置输入法\rim-config\r#win+空格切换输入法\rdebian基本命令\nhugo基本使用方式\nnvm基本使用方式\n"
+        "body": "debian/Ubuntu命令    apt apt-get 作用     apt install apt-get install 安装软件包   apt remove apt-get remove 移除软件包   apt purge apt-get purge 移除软件包及配置文件   apt update apt-get update 刷新存储库索引   apt upgrade apt-get upgrade 升级所有可升级的软件包   apt autoremove apt-get autoremove 自动删除不需要的包   apt full-upgrade apt-get dist-upgrade 在升级软件包时自动处理依赖关系   apt search apt-cache search 搜索应用程序   apt show apt-cache show 显示装细节    sudo update-alternatives --config editor # 配置默认文本编辑器 sudo update-alternatives --config x-terminal-emulator # 配置默认终端 echo $SHELL # 显示当前shell cat /etc/shells # 显示所有安装的shell chsh # 配置默认shell "
     }
 ]

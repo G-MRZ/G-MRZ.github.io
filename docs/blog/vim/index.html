@@ -28,20 +28,20 @@
   
 
   <meta property="og:title" content="Vim插件" />
-<meta property="og:description" content="插件 1、vim-plug 插件管理器 https://github.com/junegunn/vim-plug 2、coc-nvim 代码补全 https://github.com/neoclide/coc.nvim vim-plug windows安装方法 linux安装方法 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim vim配置文件添加 call" />
+<meta property="og:description" content="插件 1、vim-plug 插件管理器 [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug) 2、coc-nvim 代码补全 [https://github.com/neoclide/coc.nvim](https://github.com/neoclide/coc.nvim) vim-plug linux安装方法 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim vim配置文件添加 call plug#begin(&#39;~/.vim/plugged&#39;) Plug &#39;scrooloose/nerdtree&#39;, { &#39;on&#39;: &#39;NERDTreeToggle&#39; } call plug#end() /* ~" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://g-mrz.github.io/blog/vim/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2021-07-31T23:56:54+08:00" />
 <meta property="article:modified_time" content="2021-07-31T23:56:54+08:00" />
 
 <meta itemprop="name" content="Vim插件">
-<meta itemprop="description" content="插件 1、vim-plug 插件管理器 https://github.com/junegunn/vim-plug 2、coc-nvim 代码补全 https://github.com/neoclide/coc.nvim vim-plug windows安装方法 linux安装方法 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim vim配置文件添加 call"><meta itemprop="datePublished" content="2021-07-31T23:56:54+08:00" />
+<meta itemprop="description" content="插件 1、vim-plug 插件管理器 [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug) 2、coc-nvim 代码补全 [https://github.com/neoclide/coc.nvim](https://github.com/neoclide/coc.nvim) vim-plug linux安装方法 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim vim配置文件添加 call plug#begin(&#39;~/.vim/plugged&#39;) Plug &#39;scrooloose/nerdtree&#39;, { &#39;on&#39;: &#39;NERDTreeToggle&#39; } call plug#end() /* ~"><meta itemprop="datePublished" content="2021-07-31T23:56:54+08:00" />
 <meta itemprop="dateModified" content="2021-07-31T23:56:54+08:00" />
-<meta itemprop="wordCount" content="464">
+<meta itemprop="wordCount" content="341">
 <meta itemprop="keywords" content="工具," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:image" content="https://g-mrz.github.io//img/avatar.jifi"/>
 <meta name="twitter:title" content="Vim插件"/>
-<meta name="twitter:description" content="插件 1、vim-plug 插件管理器 https://github.com/junegunn/vim-plug 2、coc-nvim 代码补全 https://github.com/neoclide/coc.nvim vim-plug windows安装方法 linux安装方法 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim vim配置文件添加 call"/>
+<meta name="twitter:description" content="插件 1、vim-plug 插件管理器 [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug) 2、coc-nvim 代码补全 [https://github.com/neoclide/coc.nvim](https://github.com/neoclide/coc.nvim) vim-plug linux安装方法 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim vim配置文件添加 call plug#begin(&#39;~/.vim/plugged&#39;) Plug &#39;scrooloose/nerdtree&#39;, { &#39;on&#39;: &#39;NERDTreeToggle&#39; } call plug#end() /* ~"/>
 
   <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -87,55 +87,40 @@
   
   
   <div id="contentBody">
-    <h1 id="插件">插件</h1>
-<p>1、vim-plug 插件管理器 <a href="https://github.com/junegunn/vim-plug">https://github.com/junegunn/vim-plug</a></p>
-<p>2、coc-nvim 代码补全 <a href="https://github.com/neoclide/coc.nvim">https://github.com/neoclide/coc.nvim</a></p>
-<h2 id="vim-plug">vim-plug</h2>
-<h6 id="windows安装方法">windows安装方法</h6>
-<h6 id="linux安装方法">linux安装方法</h6>
-<pre tabindex="0"><code>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-</code></pre><h6 id="vim配置文件添加">vim配置文件添加</h6>
-<pre tabindex="0"><code>call plug#begin('~/.vim/plugged')
-    Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-call plug#end()
+    <h5 id="插件">插件</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">1、vim-plug 插件管理器 [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
+2、coc-nvim 代码补全 [https://github.com/neoclide/coc.nvim](https://github.com/neoclide/coc.nvim)
+</code></pre></div><h5 id="vim-plug-linux安装方法">vim-plug linux安装方法</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Shell" data-lang="Shell">curl -fLo ~/.vim/autoload/plug.vim --create-dirs <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+</code></pre></div><h5 id="vim配置文件添加">vim配置文件添加</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Shell" data-lang="Shell">call plug#begin<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;~/.vim/plugged&#39;</span><span style="color:#f92672">)</span>
+    Plug <span style="color:#e6db74">&#39;scrooloose/nerdtree&#39;</span>, <span style="color:#f92672">{</span> <span style="color:#e6db74">&#39;on&#39;</span>:  <span style="color:#e6db74">&#39;NERDTreeToggle&#39;</span> <span style="color:#f92672">}</span>
+call plug#end<span style="color:#f92672">()</span>
 
  /*
   ~/.vim/plugged为插件安装目录 
  */
-</code></pre><h3 id="vim-plug常用命令">vim-plug常用命令</h3>
-<p><code>:PlugInstall</code>安装插件
-<code>:PlugClean</code>移除不在列表中的插件</p>
-<p><code>:PlugUpdate</code>更新插件</p>
-<p><code>:PlugUpgrade</code>更新vim-plug</p>
-<p>&quot; NERD tree 插件会在首次使用 NERDTreeToggle 命令时进行加载</p>
-<p>Plug &lsquo;scrooloose/nerdtree&rsquo;, { &lsquo;on&rsquo;: &lsquo;NERDTreeToggle&rsquo; }</p>
-<p>&quot; 多个命令</p>
-<p>Plug &lsquo;junegunn/vim-github-dashboard&rsquo;, { &lsquo;on&rsquo;: [&lsquo;GHDashboard&rsquo;, &lsquo;GHActivity&rsquo;] }</p>
-<p>&quot; 当文件类型为 clojure 时，加载插件</p>
-<p>Plug &lsquo;tpope/vim-fireplace&rsquo;, { &lsquo;for&rsquo;: &lsquo;clojure&rsquo; }</p>
-<p>&quot; 多种文件类型</p>
-<p>Plug &lsquo;kovisoft/paredit&rsquo;, { &lsquo;for&rsquo;: [&lsquo;clojure&rsquo;, &lsquo;scheme&rsquo;] }</p>
-<p>&quot; 当首次执行 Vader 命令，且文件类型为 vader 时，加载插件</p>
-<p>Plug &lsquo;junegunn/vader.vim&rsquo;,  { &lsquo;on&rsquo;: &lsquo;Vader&rsquo;, &lsquo;for&rsquo;: &lsquo;vader&rsquo; }</p>
-<p>&quot; 插件按需加载后执行特定代码</p>
-<p>Plug &lsquo;junegunn/goyo.vim&rsquo;, { &lsquo;for&rsquo;: &lsquo;markdown&rsquo; }</p>
-<h2 id="coc-nvim">coc-nvim</h2>
-<h6 id="安装">安装</h6>
-<pre tabindex="0"><code>call plug#begin('~/.vim/plugged')
-    ***
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-call plug#end()
-</code></pre><h3 id="coc-nvim常用命令">coc-nvim常用命令</h3>
-<p><code>:CocInstall [插件名称]</code>安装插件</p>
-<p><code>:CocUninstall [插件名称]</code>卸载插件</p>
-<p><code>:CocList extensions</code>打开安装插件列表</p>
-<p><code>:CocConfig</code>打开用户配置 <code>coc-settings.json</code></p>
-<p><code>:CocLocalConfig</code>打开项目配置文件</p>
-<p><code>:checkhealth</code>检查 NeoVim 状态</p>
-<p><code>:CocInfo</code>查看 coc.nvim 服务相关信息</p>
-<p><code>:CocRestart</code>重启 coc 服务</p>
-
+</code></pre></div><h5 id="vim-plug常用命令">vim-plug常用命令</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">PlugInstall</span> <span style="color:#75715e">&#34; 安装插件</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">PlugClean</span> <span style="color:#75715e">&#34; 移除不在列表中的插件</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">PlugUpdate</span> <span style="color:#75715e">&#34; 更新插件</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">PlugUpgrade</span> <span style="color:#75715e">&#34; 更新vim-plug</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h6 id="coc-vim安装">coc-vim安装</h6>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">call</span> <span style="color:#a6e22e">plug</span>#<span style="color:#a6e22e">begin</span>(<span style="color:#e6db74">&#39;~/.vim/plugged&#39;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    ***<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;neoclide/coc.nvim&#39;</span>, {<span style="color:#e6db74">&#39;branch&#39;</span>: <span style="color:#e6db74">&#39;release&#39;</span>}<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">call</span> <span style="color:#a6e22e">plug</span>#<span style="color:#a6e22e">end</span>()<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h5 id="coc-nvim常用命令">coc-nvim常用命令</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">CocInstall</span> [<span style="color:#a6e22e">插件名称</span>] <span style="color:#75715e">&#34; 安装插件</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">CocUninstall</span> [<span style="color:#a6e22e">插件名称</span>] <span style="color:#75715e">&#34; 卸载插件</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">CocList</span> <span style="color:#a6e22e">extensions</span> <span style="color:#75715e">&#34; 打开安装插件列表</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">CocConfig</span> <span style="color:#75715e">&#34; 打开用户配置 </span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">CocLocalConfig</span> <span style="color:#75715e">&#34; 打开项目配置文件</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">checkhealth</span> <span style="color:#75715e">&#34; 检查 NeoVim 状态</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">CocInfo</span> <span style="color:#75715e">&#34; 查看 coc.nvim 服务相关信息</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">CocRestart</span> <span style="color:#75715e">&#34; 重启 coc 服务</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div>
   </div>
   <footer>
   <p>
